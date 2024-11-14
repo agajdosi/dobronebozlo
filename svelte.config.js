@@ -14,7 +14,7 @@ const config = {
     }),
     paths: {
       base: process.env.NODE_ENV === 'production' ? '/dobronebozlo' : '',
-      assets: process.env.NODE_ENV === 'production' ? '/dobronebozlo' : '',
+      assets: process.env.NODE_ENV === 'production' ? 'https://gajdosik.org/dobronebozlo' : '',
     },
     prerender: {
       handleMissingId: 'ignore', // Avoid errors for missing assets
