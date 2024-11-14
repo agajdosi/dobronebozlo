@@ -35,7 +35,7 @@
     const selectedIsraeli = israeliImages.sort(() => Math.random() - 0.5).slice(0, 10);
 
     let currentRound = 0;
-    const totalRounds = 2;
+    const totalRounds = 10;
     let score = 0;
     let message = '';
     let currentPair = [];
