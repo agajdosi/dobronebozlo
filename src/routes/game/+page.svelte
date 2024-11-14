@@ -92,7 +92,7 @@
         {#if currentRound < totalRounds}
             <button on:click={nextRound}>{$t('nextRound')}</button>
         {:else}
-            <button on:click={() => goto(`/results?score=${score}`)}>{$t('showResults')}</button>
+            <button on:click={() => goto(`${base}/results?score=${score}`)}>{$t('showResults')}</button>
         {/if}
     {/if}
 </main>
