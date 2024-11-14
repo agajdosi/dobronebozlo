@@ -1,6 +1,6 @@
 <script lang="ts">
     import { goto } from '$app/navigation';
-    import { assets } from '$app/paths';
+    import { assets, base } from '$app/paths';
     import { t } from 'svelte-i18n';
 
     // Define the image paths with metadata
@@ -66,7 +66,7 @@
         if (currentRound < totalRounds) {
             startRound();
         } else {
-            goto(`/results?score=${score}`);
+            goto(`${base}/results?score=${score}`);
         }
     }
 

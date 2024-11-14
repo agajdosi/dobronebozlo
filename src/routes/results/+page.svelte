@@ -2,6 +2,7 @@
     import { onMount } from 'svelte';
     import { goto } from '$app/navigation';
     import { t } from 'svelte-i18n';
+    import { base } from '$app/paths';
 
     let score = 0;
 
@@ -12,7 +13,7 @@
     });
 
     function playAgain() {
-        goto('/');
+        goto(`${base}/`);
     }
 </script>
 

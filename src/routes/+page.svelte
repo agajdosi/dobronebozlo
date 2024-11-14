@@ -1,9 +1,10 @@
 <script lang="ts">
     import { goto } from '$app/navigation';
+    import { base } from '$app/paths';
     import { t } from 'svelte-i18n';
 
     function startGame() {
-        goto('/game');
+        goto(`${base}/game`);
     }
 </script>
 
