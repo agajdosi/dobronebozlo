@@ -104,15 +104,9 @@
 
 <main>
     <h1>Choose the Good Bombing</h1>
-    <p>Round {currentRound + 1} / {totalRounds}</p>
-
-    <div class="images" class:hidden={showMessage}>
-        {#each currentPair as bombing}
-            <div class="image-container">
-                <img src={bombing.image} alt="Bombing Image" on:click={() => handleChoice(bombing.label)} />
-            </div>
-        {/each}
-    </div>
+    {#if currentRound < totalRounds}
+        <p>Round {currentRound + 1} / {totalRounds}</p>
+    {/if}
 
     {#if showMessage}
         <p>{message}</p>
@@ -123,6 +117,16 @@
             <button on:click={() => goto('/')}>Back to Welcome Page</button>
         {/if}
     {/if}
+
+
+    
+    <div class="images" class:hidden={showMessage}>
+        {#each currentPair as bombing}
+            <div class="image-container">
+                <img src={bombing.image} alt="Bombing Image" on:click={() => handleChoice(bombing.label)} />
+            </div>
+        {/each}
+    </div>
 </main>
 
 <style>
