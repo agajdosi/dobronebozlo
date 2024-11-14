@@ -1,11 +1,15 @@
 <script lang="ts">
-    import { page } from '$app/stores';
+    import { onMount } from 'svelte';
     import { goto } from '$app/navigation';
     import { t } from 'svelte-i18n';
 
-    // Extract the score from the URL query parameters
     let score = 0;
-    $: score = Number(new URLSearchParams($page.url.search).get('score')) || 0;
+
+    // Extract the score from the query parameters client-side
+    onMount(() => {
+        const params = new URLSearchParams(window.location.search);
+        score = Number(params.get('score')) || 0;
+    });
 
     function playAgain() {
         goto('/');
