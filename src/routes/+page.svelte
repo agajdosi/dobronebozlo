@@ -1,5 +1,6 @@
 <script lang="ts">
     import { goto } from '$app/navigation';
+    import { t } from 'svelte-i18n';
 
     function startGame() {
         goto('/game');
@@ -7,9 +8,9 @@
 </script>
 
 <main>
-    <h1>Good or Bad Bombing?</h1>
-    <p>Can you tell the difference between good and bad bombings? Let's find out!</p>
-    <button on:click={startGame}>Start Game</button>
+    <h1>{$t('mainTitle')}</h1>
+    <p>{$t('mainSubtitle')}</p>
+    <button on:click={startGame}>{$t('startGame')}</button>
 </main>
 
 <style>

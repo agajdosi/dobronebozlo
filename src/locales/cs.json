@@ -1,0 +1,15 @@
+{
+    "mainTitle": "Dobro nebo Zlo",
+    "mainSubtitle": "Dokážete správně rozlišit mezi dobrým a špatným bombardováním? Pojďme to zjistit!",
+    "startGame": "Zahájit kvíz",
+
+    "gameTitle": "Zvolte to dobré bombardování",
+    "correct": "Správně!",
+    "wrong": "Špatně!",
+    "nextRound": "Další Kolo",
+    "showResults": "Zobrazit Výsledky",
+    "playAgain": "Hrát Znovu",
+    "gameResults": "Výsledky Hry",
+    "yourScore": "Váš konečný výsledek",
+    "round": "Kolo"
+}

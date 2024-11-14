@@ -1,5 +1,6 @@
 <script lang="ts">
     import { goto } from '$app/navigation';
+    import { t } from 'svelte-i18n';
 
     // Define the image paths with metadata
     const russianImages = [
@@ -51,9 +52,9 @@
     function handleChoice(choice: string) {
         if (choice === 'Good') {
             score += 1;
-            message = 'Correct!';
+            message = $t('correct');
         } else {
-            message = 'Wrong!';
+            message = $t('wrong');
         }
 
         showMessage = true;
@@ -72,9 +73,9 @@
 </script>
 
 <main>
-    <h1>Choose the Good Bombing</h1>
+    <h1>{$t('gameTitle')}</h1>
     {#if currentRound < totalRounds}
-        <p>Round {currentRound + 1} / {totalRounds}</p>
+        <p>{$t('round')} {currentRound + 1}/{totalRounds}</p>
     {/if}
 
     <div class="images" class:hidden={showMessage}>
@@ -88,9 +89,9 @@
     {#if showMessage}
         <p>{message}</p>
         {#if currentRound < totalRounds}
-            <button on:click={nextRound}>Next Round</button>
+            <button on:click={nextRound}>{$t('nextRound')}</button>
         {:else}
-            <button on:click={() => goto(`/results?score=${score}`)}>Show Results</button>
+            <button on:click={() => goto(`/results?score=${score}`)}>{$t('showResults')}</button>
         {/if}
     {/if}
 </main>
