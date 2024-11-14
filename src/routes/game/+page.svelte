@@ -1,32 +1,33 @@
 <script lang="ts">
     import { goto } from '$app/navigation';
+    import { assets } from '$app/paths';
     import { t } from 'svelte-i18n';
 
     // Define the image paths with metadata
     const russianImages = [
-        { image: '/russian/1.png', label: 'Bad', location: 'Kyiv, Ukraine', date: '2023-02-15' },
-        { image: '/russian/2.png', label: 'Bad', location: 'Kharkiv, Ukraine', date: '2023-03-10' },
-        { image: '/russian/3.png', label: 'Bad', location: 'Mariupol, Ukraine', date: '2023-04-05' },
-        { image: '/russian/4.png', label: 'Bad', location: 'Bucha, Ukraine', date: '2023-05-20' },
-        { image: '/russian/5.png', label: 'Bad', location: 'Odessa, Ukraine', date: '2023-06-14' },
-        { image: '/russian/6.png', label: 'Bad', location: 'Lviv, Ukraine', date: '2023-07-08' },
-        { image: '/russian/7.png', label: 'Bad', location: 'Donetsk, Ukraine', date: '2023-08-12' },
-        { image: '/russian/8.png', label: 'Bad', location: 'Zaporizhzhia, Ukraine', date: '2023-09-01' },
-        { image: '/russian/9.png', label: 'Bad', location: 'Dnipro, Ukraine', date: '2023-10-21' },
-        { image: '/russian/10.png', label: 'Bad', location: 'Mykolaiv, Ukraine', date: '2023-11-05' },
+        { image: `${assets}/russian/1.png`, label: 'Bad', location: 'Kyiv, Ukraine', date: '2023-02-15' },
+        { image: `${assets}/russian/2.png`, label: 'Bad', location: 'Kharkiv, Ukraine', date: '2023-03-10' },
+        { image: `${assets}/russian/3.png`, label: 'Bad', location: 'Mariupol, Ukraine', date: '2023-04-05' },
+        { image: `${assets}/russian/4.png`, label: 'Bad', location: 'Bucha, Ukraine', date: '2023-05-20' },
+        { image: `${assets}/russian/5.png`, label: 'Bad', location: 'Odessa, Ukraine', date: '2023-06-14' },
+        { image: `${assets}/russian/6.png`, label: 'Bad', location: 'Lviv, Ukraine', date: '2023-07-08' },
+        { image: `${assets}/russian/7.png`, label: 'Bad', location: 'Donetsk, Ukraine', date: '2023-08-12' },
+        { image: `${assets}/russian/8.png`, label: 'Bad', location: 'Zaporizhzhia, Ukraine', date: '2023-09-01' },
+        { image: `${assets}/russian/9.png`, label: 'Bad', location: 'Dnipro, Ukraine', date: '2023-10-21' },
+        { image: `${assets}/russian/10.png`, label: 'Bad', location: 'Mykolaiv, Ukraine', date: '2023-11-05' },
     ];
 
     const israeliImages = [
-        { image: '/israeli/1.png', label: 'Good', location: 'Gaza City, Palestine', date: '2023-02-20' },
-        { image: '/israeli/2.png', label: 'Good', location: 'Rafah, Palestine', date: '2023-03-18' },
-        { image: '/israeli/3.png', label: 'Good', location: 'Jabalia, Palestine', date: '2023-04-25' },
-        { image: '/israeli/4.png', label: 'Good', location: 'Khan Younis, Palestine', date: '2023-05-30' },
-        { image: '/israeli/5.png', label: 'Good', location: 'Deir al-Balah, Palestine', date: '2023-06-22' },
-        { image: '/israeli/6.png', label: 'Good', location: 'Beit Hanoun, Palestine', date: '2023-07-14' },
-        { image: '/israeli/7.png', label: 'Good', location: 'Al-Shati, Palestine', date: '2023-08-07' },
-        { image: '/israeli/8.png', label: 'Good', location: 'Bureij, Palestine', date: '2023-09-19' },
-        { image: '/israeli/9.png', label: 'Good', location: 'Nuseirat, Palestine', date: '2023-10-02' },
-        { image: '/israeli/10.png', label: 'Good', location: 'Maghazi, Palestine', date: '2023-11-12' },
+        { image: `${assets}/israeli/1.png`, label: 'Good', location: 'Gaza City, Palestine', date: '2023-02-20' },
+        { image: `${assets}/israeli/2.png`, label: 'Good', location: 'Rafah, Palestine', date: '2023-03-18' },
+        { image: `${assets}/israeli/3.png`, label: 'Good', location: 'Jabalia, Palestine', date: '2023-04-25' },
+        { image: `${assets}/israeli/4.png`, label: 'Good', location: 'Khan Younis, Palestine', date: '2023-05-30' },
+        { image: `${assets}/israeli/5.png`, label: 'Good', location: 'Deir al-Balah, Palestine', date: '2023-06-22' },
+        { image: `${assets}/israeli/6.png`, label: 'Good', location: 'Beit Hanoun, Palestine', date: '2023-07-14' },
+        { image: `${assets}/israeli/7.png`, label: 'Good', location: 'Al-Shati, Palestine', date: '2023-08-07' },
+        { image: `${assets}/israeli/8.png`, label: 'Good', location: 'Bureij, Palestine', date: '2023-09-19' },
+        { image: `${assets}/israeli/9.png`, label: 'Good', location: 'Nuseirat, Palestine', date: '2023-10-02' },
+        { image: `${assets}/israeli/10.png`, label: 'Good', location: 'Maghazi, Palestine', date: '2023-11-12' },
     ];
 
     // Randomly select 10 images from each category
