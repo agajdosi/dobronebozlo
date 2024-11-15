@@ -79,8 +79,16 @@
             currentRound += 1;
             startRound();
         } else {
-            goto(`${base}/results?score=${score}`);
+            const v = e(score);
+            goto(`${base}/results?v=${v}`);
         }
+    }
+
+    export function e(x: number): string {
+        if (x < 0 || x > 10) throw new Error('Invalid value');
+        const o = 1000;
+        const r = (x + o) ** 2;
+        return btoa(r.toString());
     }
 
 
@@ -114,6 +122,7 @@
                 on:click={() => !showMessage && handleChoice(bombing.label, bombing)}
                 on:keydown={(e) => !showMessage && e.key === 'Enter' && handleChoice(bombing.label, bombing)}
                 disabled={showMessage}
+                aria-label="btn"
             >
             </button>
         {/each}

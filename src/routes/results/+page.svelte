@@ -9,8 +9,26 @@
     // Extract the score from the query parameters client-side
     onMount(() => {
         const params = new URLSearchParams(window.location.search);
-        score = Number(params.get('score')) || 0;
+        const v = params.get('v') || 0;
+        try {
+            score = d(v || '');
+        } catch (error) {
+            console.error('Hello looser!');
+            score = -1;
+        }
     });
+
+    function d(v: string): number {
+        try {
+            const decoded = parseInt(atob(v), 10);
+            const offset = 1000;
+            const score = Math.sqrt(decoded) - offset;
+            if (score < 0 || score > 10 || !Number.isInteger(score)) throw new Error('Invalid score');
+            return score;
+        } catch (error) {
+            throw new Error('Failed with value');
+        }
+    }
 
     function playAgain() {
         goto(`${base}/`);
