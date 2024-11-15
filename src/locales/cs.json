@@ -3,6 +3,18 @@
     "mainSubtitle": "Dokážete správně rozlišit mezi dobrým a špatným bombardováním? Pojďme to zjistit!",
     "startGame": "Zahájit Kvíz",
 
+    "page": {
+        "index": {
+            "htmlTitle": "Dobronebozlo.cz | Oficiální kvíz - Vítejte"
+        },
+        "game": {
+            "htmlTitle": "Dobronebozlo.cz | Oficiální kvíz - Hra"
+        },
+        "results": {
+            "htmlTitle": "Dobronebozlo.cz | Oficiální kvíz - Výsledky"
+        }
+    },
+
     "gameTitle": "Zvolte to dobré bombardování",
     "correct": "Správně!",
     "wrong": "Špatně!",

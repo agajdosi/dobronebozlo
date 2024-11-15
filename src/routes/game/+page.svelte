@@ -73,6 +73,10 @@
     startRound();
 </script>
 
+<svelte:head>
+    <title>{$t('page.game.htmlTitle')}</title>
+</svelte:head>
+
 <main>
     <h1>{$t('gameTitle')}</h1>
     {#if currentRound < totalRounds}

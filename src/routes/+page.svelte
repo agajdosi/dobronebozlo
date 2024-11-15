@@ -8,6 +8,10 @@
     }
 </script>
 
+<svelte:head>
+    <title>{$t('page.index.htmlTitle')}</title>
+</svelte:head>
+
 <main>
     <h1>{$t('mainTitle')}</h1>
     <p>{$t('mainSubtitle')}</p>

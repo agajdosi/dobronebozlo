@@ -17,6 +17,10 @@
     }
 </script>
 
+<svelte:head>
+    <title>{$t('page.results.htmlTitle')}</title>
+</svelte:head>
+
 <main>
     <h1>{$t('gameResults')}</h1>
     <p>{$t('yourScore')}: {score}/10</p>
