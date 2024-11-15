@@ -10,13 +10,20 @@
 
 <label for="language-select"></label>
 <select id="language-select" on:change={selectLanguage} bind:value={$locale}>
-    <option value="en">English</option>
-    <option value="cs">Čeština</option>
+    <option value="en">EN</option>
+    <option value="cs">CZ</option>
 </select>
 
 <style>
-    select {
-        margin-left: 8px;
-        padding: 5px;
-    }
+select {
+    padding: 5px 0px;
+    background-color: initial;
+    width: auto;
+    padding: unset;
+    border: none;
+    border-radius: 0;
+    height: auto;
+    cursor: pointer;
+}
+
 </style>
