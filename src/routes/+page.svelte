@@ -15,14 +15,9 @@
 </main>
 
 <style>
-    main {
-        text-align: center;
-        padding: 20px;
-    }
+main {
+    text-align: center;
+    padding: 20px;
+}
 
-    button {
-        padding: 10px 20px;
-        font-size: 1.2em;
-        cursor: pointer;
-    }
 </style>
