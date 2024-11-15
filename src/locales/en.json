@@ -1,11 +1,9 @@
 {
-    "mainTitle": "Good or Bad",
-    "mainSubtitle": "Can you tell the difference between good and bad bombings as good as the Czech diplomacy? Let's find out!",
-    "startGame": "Start the Quiz",
-
     "page": {
         "index": {
-            "htmlTitle": "Dobronebozlo.cz | Official Quiz - Welcome"
+            "htmlTitle": "Dobronebozlo.cz | Official Quiz - Welcome",
+            "title": "Good or Bad",
+            "subtitle": "Can you tell the difference between good and bad bombings as good as the Czech diplomacy? Let's find out!"
         },
         "game": {
             "htmlTitle": "Dobronebozlo.cz | Official Quiz - Game"
@@ -13,6 +11,9 @@
         "results": {
             "htmlTitle": "Dobronebozlo.cz | Official Quiz - Results"
         }
+    },
+    "button": {
+        "startGame": "Start the Quiz"
     },
 
     "gameTitle": "Choose the Good Bombing",

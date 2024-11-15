@@ -13,9 +13,9 @@
 </svelte:head>
 
 <main>
-    <h1>{$t('mainTitle')}</h1>
-    <p>{$t('mainSubtitle')}</p>
-    <button on:click={startGame}>{$t('startGame')}</button>
+    <h1>{$t('page.index.title')}</h1>
+    <p>{$t('page.index.subtitle')}</p>
+    <button on:click={startGame}>{$t('button.startGame')}</button>
 </main>
 
 <style>
