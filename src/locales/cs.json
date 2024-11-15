@@ -9,7 +9,25 @@
             "htmlTitle": "Dobronebozlo.cz | Oficiální kvíz - Hra"
         },
         "results": {
-            "htmlTitle": "Dobronebozlo.cz | Oficiální kvíz - Výsledky"
+            "htmlTitle": "Dobronebozlo.cz | Oficiální kvíz - Výsledky",
+            "0": "Tak to se vůbec nepovedlo! Tvoje skóre ukazuje, že nedokážeš rozlišit mezi správným a špatným bombardováním civilistů. Je nám to líto, ale budeme tě muset nahlásit BIS.",
+            "1": "To se fakt nepovedlo! Zkus si to ještě procvičit. A mysli na to, že v české diplomacii rozdělujeme civilisty na ty cenné a méněcenné.",
+            "2": "To se teda moc nepovedlo!. Ale jsi na dobré cestě. Zkus to ještě procvičit. Pamatuj, že civilisty rozdělujeme na ty cenné a méněcenné.",
+            "3": "To se moc nepovedlo. Ale jsi na dobré cestě. Zkus to ještě procvičit. Pamatuj, že civilisty rozdělujeme na ty cenné a méněcenné.",
+            "4": "Nic moc. Ale jsi na dobré cestě. Zkus to ještě procvičit. Pamatuj, že civilisty rozdělujeme na ty cenné a méněcenné.",
+            "5": "Celkem průměrné. Očividně rozlišuješ mezi dobrý a špatným bombardováním tak nějak random. Zkus to ještě jednou a hlavně pamatuj, že civilisty rozdělujeme na ty cenné a méněcenné.",
+            "6": "Tvůj výsledek celkem ujde! Ale chce to ještě trochu procvičit, kdo je cenný a kdo méněcenný civilista.",
+            "7": "Hele docela dobrý výsledek. Na Českou televizi ještě úplně nemáš, ale jsi na dobré cestě. Zkus si ještě trochu víc ujasnit, jací civilisté jsou lidé a jací jen čísla.",
+            "8": "Strašně dobrý výsledek! S těmito znalostmi dělení civilistů na cenné a méněcenné, se můžeš z fleku hlásit na pozici blízkovýchodního redaktora v ČT. Zkus to ještě jednou a pamatuj na rozdíl mezi: raketový útok zavraždil dva civilisty a při zásahu cíle zemřely dvě osoby.",
+            "9": "Skoro dokonalé skóre! Už nechybí moc a zařadíš se pobok špiček české diplomacie. Nevzdávej to a bude Tě čekat zářná budoucnost!",
+            "10": "Tvůj výsledek se řadí na špičku české diplomacie! Opravdu gratulujeme...",
+            "thirdPerson": "drží skóre",
+            "secondPerson": "Tvoje skóre je",
+            "motivation": "Podaří se Ti to překonat?",
+            "motivationStart": "Zkusit kvíz",
+            "tryAgain": "Zkusit znovu",
+            "enterName": "Zadej tvoje jméno",
+            "saveName": "Uložit a sdílet"
         }
     },
     "button": {
@@ -22,7 +40,6 @@
     "nextRound": "Další Kolo",
     "showResults": "Zobrazit Výsledky",
     "playAgain": "Hrát Znovu",
-    "gameResults": "Výsledky Hry",
     "yourScore": "Váš konečný výsledek",
     "round": "Kolo"
 }

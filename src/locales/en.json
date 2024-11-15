@@ -9,7 +9,25 @@
             "htmlTitle": "Dobronebozlo.cz | Official Quiz - Game"
         },
         "results": {
-            "htmlTitle": "Dobronebozlo.cz | Official Quiz - Results"
+            "htmlTitle": "Dobronebozlo.cz | Official Quiz - Results",
+            "0": "Well, that was a complete failure! Your score shows that you can't distinguish between right and wrong bombings of civilians. We're sorry, but we might have to report you to the intelligence services.",
+            "1": "That didn't go well at all! Try practicing a bit more. And remember, in Czech diplomacy, we distinguish civilians as valuable and less valuable.",
+            "2": "That wasn't great! But you're on the right track. Try practicing some more. Remember, we classify civilians into valuable and less valuable categories.",
+            "3": "That didn't go too well. But you're on the right track. Try practicing some more. Remember, we classify civilians into valuable and less valuable categories.",
+            "4": "Not bad, but not great either. You're on the right track. Keep practicing and remember that we categorize civilians as valuable and less valuable.",
+            "5": "Quite average. It seems you distinguish between good and bad bombings somewhat randomly. Try again and keep in mind that we classify civilians as valuable and less valuable.",
+            "6": "Your result is quite decent! But you still need a bit more practice on who is a valuable and who is a less valuable civilian.",
+            "7": "Hey, that's a pretty good result. You're not quite ready for Czech Television yet, but you're on the right track. Try clarifying a bit more who are the real people and who are just numbers.",
+            "8": "An excellent result! With this knowledge of distinguishing between valuable and less valuable civilians, you can apply for a position as a Middle East correspondent at Czech Television. Try once more and remember the difference between 'a rocket attack killed two civilians' and 'two people died in a targeted strike.'",
+            "9": "Almost a perfect score! You're very close to joining the ranks of top Czech diplomats. Don't give up, and a bright future awaits you!",
+            "10": "Your result ranks you among the top of Czech diplomacy! Congratulations...",
+            "thirdPerson": "holds a score of",
+            "secondPerson": "Your score is",
+            "motivation": "Can you beat this?",
+            "motivationStart": "Try the quiz",
+            "tryAgain": "Try again",
+            "enterName": "Enter your name",
+            "saveName": "Save and share"
         }
     },
     "button": {
@@ -22,7 +40,6 @@
     "nextRound": "Next Round",
     "showResults": "Show Results",
     "playAgain": "Play Again",
-    "gameResults": "Game Results",
     "yourScore": "Your final score",
     "round": "Round"
 }
