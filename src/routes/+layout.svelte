@@ -1,9 +1,11 @@
 <script>
     import '$lib/i18n.ts'; // initialize i18n
     import LanguageSwitcher from '$lib/LanguageSwitcher.svelte';
+    import { base } from '$app/paths';
 </script>
 
 <header>
+    <a href={base} class="logo">dobronebozlo.cz</a>
     <LanguageSwitcher />
 </header>
 
@@ -56,33 +58,16 @@
 	color: var(--text-color);
 }
 
-.btn {
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	align-items: center;
-	background: var(--clrPrimary);
-	border: 1px solid var(--clrPrimary);
-	border-radius: .1875rem;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	color: var(--clrWhite);
-	/* display: -webkit-inline-box; */
-	/* display: -ms-inline-flexbox; */
-	display: inline-flex;
-	font-family: Roboto,sans-serif;
-	font-size: .75rem;
-	font-style: normal;
-	font-weight: 500;
-	gap: 0 .25rem;
-	justify-content: center;
-	letter-spacing: .6px;
-	line-height: 1.167;
-	padding: .75rem;
-	text-decoration: none;
-	text-transform: uppercase;
+:global(header) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 0.4rem;
+}
 
+:global(.logo) {
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--grey-color);
 }
 
 </style>
