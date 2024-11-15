@@ -3,8 +3,16 @@
     import { assets, base } from '$app/paths';
     import { t } from 'svelte-i18n';
 
+    // Define the image metadata type
+    type ImageData = {
+        image: string;
+        label: 'Good' | 'Bad';
+        location: string;
+        date: string;
+    };
+
     // Define the image paths with metadata
-    const russianImages = [
+    const russianImages: ImageData[] = [
         { image: `${assets}/russian/1.png`, label: 'Bad', location: 'Kyiv, Ukraine', date: '2023-02-15' },
         { image: `${assets}/russian/2.png`, label: 'Bad', location: 'Kharkiv, Ukraine', date: '2023-03-10' },
         { image: `${assets}/russian/3.png`, label: 'Bad', location: 'Mariupol, Ukraine', date: '2023-04-05' },
@@ -17,7 +25,7 @@
         { image: `${assets}/russian/10.png`, label: 'Bad', location: 'Mykolaiv, Ukraine', date: '2023-11-05' },
     ];
 
-    const israeliImages = [
+    const israeliImages: ImageData[] = [
         { image: `${assets}/israeli/1.png`, label: 'Good', location: 'Gaza City, Palestine', date: '2023-02-20' },
         { image: `${assets}/israeli/2.png`, label: 'Good', location: 'Rafah, Palestine', date: '2023-03-18' },
         { image: `${assets}/israeli/3.png`, label: 'Good', location: 'Jabalia, Palestine', date: '2023-04-25' },
@@ -30,40 +38,48 @@
         { image: `${assets}/israeli/10.png`, label: 'Good', location: 'Maghazi, Palestine', date: '2023-11-12' },
     ];
 
-    // Randomly select 10 images from each category
-    const selectedRussian = russianImages.sort(() => Math.random() - 0.5).slice(0, 10);
-    const selectedIsraeli = israeliImages.sort(() => Math.random() - 0.5).slice(0, 10);
+    // Define the type for the pairs array
+    type Pair = [ImageData, ImageData];
+
+    // Generate pairs for all rounds
+    const pairs: Pair[] = [];
+    const selectedRussian = russianImages.sort(() => Math.random() - 0.5);
+    const selectedIsraeli = israeliImages.sort(() => Math.random() - 0.5);
+
+    for (let i = 0; i < 10; i++) {
+        pairs.push([selectedRussian[i], selectedIsraeli[i]].sort(() => Math.random() - 0.5) as Pair);
+    }
 
     let currentRound = 0;
     const totalRounds = 10;
     let score = 0;
     let message = '';
-    let currentPair = [];
     let showMessage = false;
+    let selectedImage: ImageData | null = null;
+    let isCorrect = false;
 
     function startRound() {
-        currentPair = [
-            selectedRussian[currentRound],
-            selectedIsraeli[currentRound],
-        ].sort(() => Math.random() - 0.5);
+        selectedImage = null;
         message = '';
         showMessage = false;
+        isCorrect = false;
     }
 
-    function handleChoice(choice: string) {
-        if (choice === 'Good') {
+    function handleChoice(choice: string, image: ImageData) {
+        selectedImage = image;
+        isCorrect = choice === 'Good';
+        if (isCorrect) {
             score += 1;
             message = $t('correct');
         } else {
             message = $t('wrong');
         }
-
         showMessage = true;
-        currentRound += 1;
     }
 
     function nextRound() {
-        if (currentRound < totalRounds) {
+        if (currentRound < totalRounds - 1) {
+            currentRound += 1;
             startRound();
         } else {
             goto(`${base}/results?score=${score}`);
@@ -79,25 +95,26 @@
 
 <main>
     <h1>{$t('gameTitle')}</h1>
-    {#if currentRound < totalRounds}
-        <p>{$t('round')} {currentRound + 1}/{totalRounds}</p>
-    {/if}
+    <p>{$t('round')} {currentRound + 1}/{totalRounds}</p>
 
-    <div class="images" class:hidden={showMessage}>
-        {#each currentPair as bombing}
-            <div class="image-container">
-                <img src={bombing.image} alt="Bombing Image" on:click={() => handleChoice(bombing.label)} />
-            </div>
+    <div class="images">
+        {#each pairs[currentRound] as bombing}
+            <button
+                type="button"
+                class="image-button {selectedImage === bombing ? (isCorrect ? 'selected' : 'incorrect') : ''}"
+                style="background-image: url({bombing.image})"
+                on:click={() => !showMessage && handleChoice(bombing.label, bombing)}
+                on:keydown={(e) => !showMessage && e.key === 'Enter' && handleChoice(bombing.label, bombing)}
+                disabled={showMessage}
+            >
+            </button>
         {/each}
     </div>
+    
 
     {#if showMessage}
         <p>{message}</p>
-        {#if currentRound < totalRounds}
-            <button on:click={nextRound}>{$t('nextRound')}</button>
-        {:else}
-            <button on:click={() => goto(`${base}/results?score=${score}`)}>{$t('showResults')}</button>
-        {/if}
+        <button on:click={nextRound}>{$t('nextRound')}</button>
     {/if}
 </main>
 
@@ -114,22 +131,35 @@
         margin: 20px 0;
     }
 
-    .image-container {
+    .image-button {
+        width: 40vw;
+        height: 40vh; /* 2:3 ratio */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: none;
         cursor: pointer;
+        border-radius: 8px;
+        transition: transform 0.2s, opacity 0.2s;
+        outline: none;
     }
 
-    img {
-        max-width: 300px;
-        border: 2px solid #333;
+    .image-button.selected {
+        outline: 4px solid var(--secondary-color);
+    }
+
+    .image-button.incorrect {
+        outline: 4px solid var(--error-color);
+    }
+
+    .image-button:disabled {
+        cursor: not-allowed;
+        pointer-events: none;
     }
 
     button {
         padding: 10px 20px;
         font-size: 1em;
         margin-top: 20px;
-    }
-
-    .hidden {
-        display: none;
     }
 </style>

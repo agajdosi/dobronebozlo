@@ -20,6 +20,7 @@
     --text-color: #3b3b3b;
     --grey-color: #686868;
     --white-color: #ffffff;
+    --error-color: #b81428;
 }
 
 :global(body) {
