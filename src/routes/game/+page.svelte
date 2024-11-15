@@ -38,10 +38,7 @@
         { image: `${assets}/israeli/10.png`, label: 'Good', location: 'Maghazi, Palestine', date: '2023-11-12' },
     ];
 
-    // Define the type for the pairs array
     type Pair = [ImageData, ImageData];
-
-    // Generate pairs for all rounds
     const pairs: Pair[] = [];
     const selectedRussian = russianImages.sort(() => Math.random() - 0.5);
     const selectedIsraeli = israeliImages.sort(() => Math.random() - 0.5);
@@ -86,6 +83,17 @@
         }
     }
 
+
+    function preloadImages() {
+        if (typeof window === 'undefined') return;
+        const imagesToPreload = pairs.slice(1).flatMap(([img1, img2]) => [img1.image, img2.image]);
+        imagesToPreload.forEach((src) => {
+            const image = new Image();
+            image.src = src;
+        });
+    }
+
+    preloadImages();
     startRound();
 </script>
 
@@ -137,6 +145,7 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        background-color: var(--background-color);
         border: none;
         cursor: pointer;
         border-radius: 8px;

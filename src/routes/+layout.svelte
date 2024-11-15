@@ -21,6 +21,7 @@
     --grey-color: #686868;
     --white-color: #ffffff;
     --error-color: #b81428;
+    --background-color: var(--white-color);
 }
 
 :global(body) {
