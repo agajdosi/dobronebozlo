@@ -3,7 +3,8 @@
     import { assets, base } from '$app/paths';
     import { t } from 'svelte-i18n';
 
-    // Define the image metadata type
+    const totalRounds = 1;
+
     type ImageData = {
         image: string;
         label: 'Good' | 'Bad';
@@ -11,31 +12,14 @@
         date: string;
     };
 
-    // Define the image paths with metadata
     const russianImages: ImageData[] = [
         { image: `${assets}/russian/1.jpg`, label: 'Bad', location: 'Kyiv, Ukraine', date: '2023-02-15' },
         { image: `${assets}/russian/2.jpg`, label: 'Bad', location: 'Kharkiv, Ukraine', date: '2023-03-10' },
-        { image: `${assets}/russian/3.jpg`, label: 'Bad', location: 'Mariupol, Ukraine', date: '2023-04-05' },
-        { image: `${assets}/russian/4.jpg`, label: 'Bad', location: 'Bucha, Ukraine', date: '2023-05-20' },
-        { image: `${assets}/russian/5.jpg`, label: 'Bad', location: 'Odessa, Ukraine', date: '2023-06-14' },
-        { image: `${assets}/russian/6.jpg`, label: 'Bad', location: 'Lviv, Ukraine', date: '2023-07-08' },
-        { image: `${assets}/russian/7.jpg`, label: 'Bad', location: 'Donetsk, Ukraine', date: '2023-08-12' },
-        { image: `${assets}/russian/8.jpg`, label: 'Bad', location: 'Zaporizhzhia, Ukraine', date: '2023-09-01' },
-        { image: `${assets}/russian/9.jpg`, label: 'Bad', location: 'Dnipro, Ukraine', date: '2023-10-21' },
-        { image: `${assets}/russian/10.jpg`, label: 'Bad', location: 'Mykolaiv, Ukraine', date: '2023-11-05' },
     ];
 
     const israeliImages: ImageData[] = [
         { image: `${assets}/israeli/1.jpg`, label: 'Good', location: 'Gaza City, Palestine', date: '2023-02-20' },
         { image: `${assets}/israeli/2.jpg`, label: 'Good', location: 'Rafah, Palestine', date: '2023-03-18' },
-        { image: `${assets}/israeli/3.jpg`, label: 'Good', location: 'Jabalia, Palestine', date: '2023-04-25' },
-        { image: `${assets}/israeli/4.jpg`, label: 'Good', location: 'Khan Younis, Palestine', date: '2023-05-30' },
-        { image: `${assets}/israeli/5.jpg`, label: 'Good', location: 'Deir al-Balah, Palestine', date: '2023-06-22' },
-        { image: `${assets}/israeli/6.jpg`, label: 'Good', location: 'Beit Hanoun, Palestine', date: '2023-07-14' },
-        { image: `${assets}/israeli/7.jpg`, label: 'Good', location: 'Al-Shati, Palestine', date: '2023-08-07' },
-        { image: `${assets}/israeli/8.jpg`, label: 'Good', location: 'Bureij, Palestine', date: '2023-09-19' },
-        { image: `${assets}/israeli/9.jpg`, label: 'Good', location: 'Nuseirat, Palestine', date: '2023-10-02' },
-        { image: `${assets}/israeli/10.jpg`, label: 'Good', location: 'Maghazi, Palestine', date: '2023-11-12' },
     ];
 
     type Pair = [ImageData, ImageData];
@@ -43,17 +27,18 @@
     const selectedRussian = russianImages.sort(() => Math.random() - 0.5);
     const selectedIsraeli = israeliImages.sort(() => Math.random() - 0.5);
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < totalRounds; i++) {
         pairs.push([selectedRussian[i], selectedIsraeli[i]].sort(() => Math.random() - 0.5) as Pair);
     }
 
     let currentRound = 0;
-    const totalRounds = 10;
     let score = 0;
     let message = '';
     let showMessage = false;
     let selectedImage: ImageData | null = null;
     let isCorrect = false;
+    let userName = '';
+    let gender = '';
 
     function startRound() {
         selectedImage = null;
@@ -78,30 +63,29 @@
         if (currentRound < totalRounds - 1) {
             currentRound += 1;
             startRound();
-        } else {
-            const v = e(score);
-            goto(`${base}/results?v=${v}`);
         }
     }
 
+    function saveAndRedirect() {
+        if (userName.trim() === '') {
+            alert($t('page.game.enterValidName'));
+            return;
+        }
+
+        if (gender === '') {
+            gender = "n";
+        }
+
+        const formattedName = encodeURIComponent(userName.trim());
+        goto(`${base}/results/${formattedName}/${gender}/${score}`);
+    }
+
     export function e(x: number): string {
-        if (x < 0 || x > 10) throw new Error('Invalid value');
         const o = 1000;
         const r = (x + o) ** 2;
         return btoa(r.toString());
     }
 
-
-    function preloadImages() {
-        if (typeof window === 'undefined') return;
-        const imagesToPreload = pairs.slice(1).flatMap(([img1, img2]) => [img1.image, img2.image]);
-        imagesToPreload.forEach((src) => {
-            const image = new Image();
-            image.src = src;
-        });
-    }
-
-    preloadImages();
     startRound();
 </script>
 
@@ -127,57 +111,76 @@
             </button>
         {/each}
     </div>
-    
 
     {#if showMessage}
         <p>{message}</p>
-        <button on:click={nextRound}>{$t('nextRound')}</button>
+        {#if currentRound < totalRounds - 1}
+            <button on:click={nextRound}>{$t('nextRound')}</button>
+        {:else}
+            <div class="enter">
+                <input
+                    type="text"
+                    bind:value={userName}
+                    placeholder={$t('page.game.enterName')}
+                    aria-label="Enter your name"
+                />
+                <select bind:value={gender} aria-label="Select your gender">
+                    <option value="" disabled selected>{$t('page.game.genderHint')}</option>
+                    <option value="m">{$t('page.game.genderMale')}</option>
+                    <option value="f">{$t('page.game.genderFemale')}</option>
+                    <option value="n">{$t('page.game.genderNeutral')}</option>
+                </select>
+                <button on:click={saveAndRedirect}>
+                    {$t('page.game.showResults')}
+                </button>
+            </div>
+        {/if}
     {/if}
 </main>
 
 <style>
-    main {
-        text-align: center;
-        padding: 20px;
-    }
+main {
+    text-align: center;
+    padding: 20px;
+}
 
-    .images {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        margin: 20px 0;
-    }
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
 
-    .image-button {
-        width: 40vw;
-        height: 40vh; /* 2:3 ratio */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: var(--background-color);
-        border: none;
-        cursor: pointer;
-        border-radius: 8px;
-        transition: transform 0.2s, opacity 0.2s;
-        outline: none;
-    }
+.image-button {
+    width: 40vw;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.2s, opacity 0.2s;
+}
 
-    .image-button.selected {
-        outline: 4px solid var(--secondary-color);
-    }
+.image-button.selected {
+    outline: 4px solid var(--secondary-color);
+}
 
-    .image-button.incorrect {
-        outline: 4px solid var(--error-color);
-    }
+.image-button.incorrect {
+    outline: 4px solid var(--error-color);
+}
 
-    .image-button:disabled {
-        cursor: not-allowed;
-        pointer-events: none;
-    }
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+}
 
-    button {
-        padding: 10px 20px;
-        font-size: 1em;
-        margin-top: 20px;
-    }
+input, select {
+    padding: 8px;
+    margin-top: 10px;
+}
+
+.enter {
+    margin-top: 20px;
+}
 </style>

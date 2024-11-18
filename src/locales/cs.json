@@ -6,7 +6,13 @@
             "subtitle": "Dokážete správně rozlišit mezi dobrým a špatným bombardováním? Pojďme to zjistit!"
         },
         "game": {
-            "htmlTitle": "Dobronebozlo.cz | Oficiální kvíz - Hra"
+            "htmlTitle": "Dobronebozlo.cz | Oficiální kvíz - Hra",
+            "showResults": "Zobrazit Výsledky",
+            "enterName": "Zadej tvoje jméno",
+            "genderMale": "Mužský rod",
+            "genderFemale": "Ženský rod",
+            "genderNeutral": "Neutrální",
+            "genderHint": "Oslovení"
         },
         "results": {
             "htmlTitle": "Dobronebozlo.cz | Oficiální kvíz - Výsledky",
@@ -26,7 +32,6 @@
             "motivation": "Podaří se Ti to překonat?",
             "motivationStart": "Zkusit kvíz",
             "tryAgain": "Zkusit znovu",
-            "enterName": "Zadej tvoje jméno",
             "saveName": "Uložit a sdílet"
         }
     },
@@ -38,7 +43,6 @@
     "correct": "Správně!",
     "wrong": "Špatně!",
     "nextRound": "Další Kolo",
-    "showResults": "Zobrazit Výsledky",
     "playAgain": "Hrát Znovu",
     "yourScore": "Váš konečný výsledek",
     "round": "Kolo"
