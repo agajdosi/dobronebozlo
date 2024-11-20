@@ -22,9 +22,9 @@
     }
     const scoreSuperlative: string = getScoreSuperlative(score);
     const titles: Record<'m' | 'f' | 'n', string> = {
-        m: `${user.charAt(0).toUpperCase() + user.slice(1)} dosáhl ${scoreSuperlative}skóre ${score}/10! Překonáš ho?`,
-        f: `${user.charAt(0).toUpperCase() + user.slice(1)} dosáhla ${scoreSuperlative}skóre ${score}/10! Překonáš ji?`,
-        n: `${user.charAt(0).toUpperCase() + user.slice(1)} dosáhlx ${scoreSuperlative}skóre ${score}/10! Překonáš je?`
+        m: `${user.charAt(0).toUpperCase() + user.slice(1)} dosáhl ${scoreSuperlative}skóre ${score}/20! Překonáš ho?`,
+        f: `${user.charAt(0).toUpperCase() + user.slice(1)} dosáhla ${scoreSuperlative}skóre ${score}/20! Překonáš ji?`,
+        n: `${user.charAt(0).toUpperCase() + user.slice(1)} dosáhlx ${scoreSuperlative}skóre ${score}/20! Překonáš je?`
     };
     const ogTitle: string = titles[gender as 'm' | 'f' | 'n'] || titles.n;
 
@@ -61,7 +61,7 @@
 
 
 <main>
-    <h1>{user.charAt(0).toUpperCase() + user.slice(1)} {$t("page.results.thirdPerson")} {score}/10!</h1>
+    <h1>{user.charAt(0).toUpperCase() + user.slice(1)} {$t("page.results.thirdPerson")} {score}/20!</h1>
     <p>{$t("page.results.motivation")}</p>
     <button class="again" on:click={playAgain}>{$t('page.results.motivationStart')}</button>
 </main>
