@@ -17,7 +17,7 @@
     <meta property="og:url" content="{base}" />
     <meta property="og:image" content="https://i3.cn.cz/15/1661152163_P2022082202112.jpg" />
     <meta property="og:description" content="Dokážete správně rozlišit dobré a špatné bombardování?" />
-    <meta property="og:site_name" content="dobronebozlo.cz" />
+    <meta property="og:site_name" content="Dobronebozlo.cz" />
     <meta property="og:locale" content="cs_CZ" />
     <meta property="og:locale:alternate" content="en_US" />
 
