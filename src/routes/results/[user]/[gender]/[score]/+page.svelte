@@ -25,7 +25,8 @@
     <meta property="og:image" content="{base}/assets/share-image.jpg" />
     <meta property="og:description" content="Check out {user.charAt(0).toUpperCase() + user.slice(1)}'s score: {score}/10. Can you beat it?" />
     <meta property="og:site_name" content="Your Game Title" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content="cs_CZ" />
+    <meta property="og:locale:alternate" content="en_US" />
 
     <!-- Twitter Meta Tags (Optional, for better sharing on Twitter) -->
     <meta name="twitter:card" content="summary_large_image" />
