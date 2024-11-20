@@ -32,7 +32,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="{user.charAt(0).toUpperCase() + user.slice(1)} scored {score}/10!" />
     <meta name="twitter:description" content="Check out {user.charAt(0).toUpperCase() + user.slice(1)}'s score: {score}/10. Can you beat it?" />
-    <meta name="twitter:image" content="{base}/assets/{score}.jpg" />
+    <meta name="twitter:image" content="{base}/score/{score}.jpg" />
 </svelte:head>
 
 
