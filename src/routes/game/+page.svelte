@@ -13,13 +13,49 @@
     };
 
     const russianImages: ImageData[] = [
-        { image: `${assets}/russian/1.jpg`, label: 'Bad', location: 'Kyiv, Ukraine', date: '2023-02-15' },
-        { image: `${assets}/russian/2.jpg`, label: 'Bad', location: 'Kharkiv, Ukraine', date: '2023-03-10' },
+        { image: `${assets}/russian/1.jpg`, label: 'Bad', location: '1 Kyiv, Ukraine', date: '2023-02-15' },
+        { image: `${assets}/russian/2.jpg`, label: 'Bad', location: '2 Kharkiv, Ukraine', date: '2023-03-10' },
+        { image: `${assets}/russian/3.jpg`, label: 'Bad', location: '3 Kyiv, Ukraine', date: '2023-02-15' },
+        { image: `${assets}/russian/4.jpg`, label: 'Bad', location: '4 Kharkiv, Ukraine', date: '2023-03-10' },
+        { image: `${assets}/russian/5.jpg`, label: 'Bad', location: '5 Kyiv, Ukraine', date: '2023-02-15' },
+        { image: `${assets}/russian/6.jpg`, label: 'Bad', location: '6 Kharkiv, Ukraine', date: '2023-03-10' },
+        { image: `${assets}/russian/7.jpg`, label: 'Bad', location: '7 Kyiv, Ukraine', date: '2023-02-15' },
+        { image: `${assets}/russian/8.jpg`, label: 'Bad', location: '8 Kharkiv, Ukraine', date: '2023-03-10' },
+        { image: `${assets}/russian/9.jpg`, label: 'Bad', location: '9 Kyiv, Ukraine', date: '2023-02-15' },
+        { image: `${assets}/russian/10.jpg`, label: 'Bad', location: '10 Kharkiv, Ukraine', date: '2023-03-10' },
+        { image: `${assets}/russian/1.jpg`, label: 'Bad', location: '11 Kyiv, Ukraine', date: '2023-02-15' },
+        { image: `${assets}/russian/2.jpg`, label: 'Bad', location: '12 Kharkiv, Ukraine', date: '2023-03-10' },
+        { image: `${assets}/russian/3.jpg`, label: 'Bad', location: '13 Kyiv, Ukraine', date: '2023-02-15' },
+        { image: `${assets}/russian/4.jpg`, label: 'Bad', location: '14 Kharkiv, Ukraine', date: '2023-03-10' },
+        { image: `${assets}/russian/5.jpg`, label: 'Bad', location: '15 Kyiv, Ukraine', date: '2023-02-15' },
+        { image: `${assets}/russian/6.jpg`, label: 'Bad', location: '16 Kharkiv, Ukraine', date: '2023-03-10' },
+        { image: `${assets}/russian/7.jpg`, label: 'Bad', location: '17 Kyiv, Ukraine', date: '2023-02-15' },
+        { image: `${assets}/russian/8.jpg`, label: 'Bad', location: '18 Kharkiv, Ukraine', date: '2023-03-10' },
+        { image: `${assets}/russian/9.jpg`, label: 'Bad', location: '19 Kyiv, Ukraine', date: '2023-02-15' },
+        { image: `${assets}/russian/10.jpg`, label: 'Bad', location: '20 Kharkiv, Ukraine', date: '2023-03-10' },
     ];
 
     const israeliImages: ImageData[] = [
-        { image: `${assets}/israeli/1.jpg`, label: 'Good', location: 'Gaza City, Palestine', date: '2023-02-20' },
-        { image: `${assets}/israeli/2.jpg`, label: 'Good', location: 'Rafah, Palestine', date: '2023-03-18' },
+        { image: `${assets}/israeli/1.jpg`, label: 'Good', location: '1 Gaza City, Palestine', date: '2023-02-20' },
+        { image: `${assets}/israeli/2.jpg`, label: 'Good', location: '2 Rafah, Palestine', date: '2023-03-18' },
+        { image: `${assets}/israeli/3.jpg`, label: 'Good', location: '3 Gaza City, Palestine', date: '2023-02-20' },
+        { image: `${assets}/israeli/4.jpg`, label: 'Good', location: '4 Rafah, Palestine', date: '2023-03-18' },
+        { image: `${assets}/israeli/5.jpg`, label: 'Good', location: '5 Gaza City, Palestine', date: '2023-02-20' },
+        { image: `${assets}/israeli/6.jpg`, label: 'Good', location: '6 Rafah, Palestine', date: '2023-03-18' },
+        { image: `${assets}/israeli/7.jpg`, label: 'Good', location: '7 Gaza City, Palestine', date: '2023-02-20' },
+        { image: `${assets}/israeli/8.jpg`, label: 'Good', location: '8 Rafah, Palestine', date: '2023-03-18' },
+        { image: `${assets}/israeli/9.jpg`, label: 'Good', location: '9 Gaza City, Palestine', date: '2023-02-20' },
+        { image: `${assets}/israeli/10.jpg`, label: 'Good', location: '10 Rafah, Palestine', date: '2023-03-18' },
+        { image: `${assets}/israeli/1.jpg`, label: 'Good', location: '11 Gaza City, Palestine', date: '2023-02-20' },
+        { image: `${assets}/israeli/2.jpg`, label: 'Good', location: '12 Rafah, Palestine', date: '2023-03-18' },
+        { image: `${assets}/israeli/3.jpg`, label: 'Good', location: '13 Gaza City, Palestine', date: '2023-02-20' },
+        { image: `${assets}/israeli/4.jpg`, label: 'Good', location: '14 Rafah, Palestine', date: '2023-03-18' },
+        { image: `${assets}/israeli/5.jpg`, label: 'Good', location: '15 Gaza City, Palestine', date: '2023-02-20' },
+        { image: `${assets}/israeli/6.jpg`, label: 'Good', location: '16 Rafah, Palestine', date: '2023-03-18' },
+        { image: `${assets}/israeli/7.jpg`, label: 'Good', location: '17 Gaza City, Palestine', date: '2023-02-20' },
+        { image: `${assets}/israeli/8.jpg`, label: 'Good', location: '18 Rafah, Palestine', date: '2023-03-18' },
+        { image: `${assets}/israeli/9.jpg`, label: 'Good', location: '19 Gaza City, Palestine', date: '2023-02-20' },
+        { image: `${assets}/israeli/10.jpg`, label: 'Good', location: '20 Rafah, Palestine', date: '2023-03-18' },
     ];
 
     type Pair = [ImageData, ImageData];
