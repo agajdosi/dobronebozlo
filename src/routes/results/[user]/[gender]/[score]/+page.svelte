@@ -22,7 +22,7 @@
     <meta property="og:title" content="{user.charAt(0).toUpperCase() + user.slice(1)} scored {score}/10!" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{base}/results/{user}/{gender}/{score}" />
-    <meta property="og:image" content="{base}/assets/{score}.jpg" />
+    <meta property="og:image" content="{base}/score/{score}.jpg" />
     <meta property="og:description" content="Check out {user.charAt(0).toUpperCase() + user.slice(1)}'s score: {score}/10. Can you beat it?" />
     <meta property="og:site_name" content="Dobronebozlo.cz" />
     <meta property="og:locale" content="cs_CZ" />
