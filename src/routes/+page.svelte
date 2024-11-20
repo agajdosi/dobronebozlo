@@ -15,7 +15,7 @@
     <meta property="og:title" content="Oficiální tréninkový kvíz české diplomacie" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{base}" />
-    <meta property="og:image" content="{base}/assets/share-image.jpg" />
+    <meta property="og:image" content="https://i3.cn.cz/15/1661152163_P2022082202112.jpg" />
     <meta property="og:description" content="Dokážete správně rozlišit dobré a špatné bombardování?" />
     <meta property="og:site_name" content="dobronebozlo.cz" />
     <meta property="og:locale" content="cs_CZ" />
@@ -25,7 +25,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Oficiální tréninkový kvíz české diplomacie" />
     <meta name="twitter:description" content="Dokážete správně rozlišit dobré a špatné bombardování?" />
-    <meta name="twitter:image" content="{base}/assets/share-image.jpg" />
+    <meta name="twitter:image" content="https://i3.cn.cz/15/1661152163_P2022082202112.jpg" />
 </svelte:head>
 
 <main>
