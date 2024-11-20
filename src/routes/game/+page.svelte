@@ -3,7 +3,7 @@
     import { assets, base } from '$app/paths';
     import { t } from 'svelte-i18n';
 
-    const totalRounds = 1;
+    const totalRounds = 20;
 
     type ImageData = {
         image: string;
