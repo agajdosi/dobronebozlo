@@ -36,7 +36,8 @@
         }
     },
     "button": {
-        "startGame": "Zahájit kvíz"
+        "startGame": "Zahájit kvíz",
+        "goHome": "Zpět domů"
     },
 
     "gameTitle": "Zvolte bombardování, které je dobré:",
