@@ -5,9 +5,10 @@
 
     // Access data provided by the load function in +page.server.ts
     export let data;
-    const user = data.user;
+    const scoreEncoded = data.scoreEncoded;
     const score = data.score;
-    const gender: string = data.gender;
+    const name = data.name;
+    const gender = data.gender;
 
     function playAgain() {
         goto(`${base}/`);
@@ -22,9 +23,9 @@
     }
     const scoreSuperlative: string = getScoreSuperlative(score);
     const titles: Record<'m' | 'f' | 'n', string> = {
-        m: `${user.charAt(0).toUpperCase() + user.slice(1)} dosáhl ${scoreSuperlative}skóre ${score}/20! Překonáš ho?`,
-        f: `${user.charAt(0).toUpperCase() + user.slice(1)} dosáhla ${scoreSuperlative}skóre ${score}/20! Překonáš ji?`,
-        n: `${user.charAt(0).toUpperCase() + user.slice(1)} dosáhlx ${scoreSuperlative}skóre ${score}/20! Překonáš je?`
+        m: `${name.charAt(0).toUpperCase() + name.slice(1)} dosáhl ${scoreSuperlative}skóre ${score}/20! Překonáš ho?`,
+        f: `${name.charAt(0).toUpperCase() + name.slice(1)} dosáhla ${scoreSuperlative}skóre ${score}/20! Překonáš ji?`,
+        n: `${name.charAt(0).toUpperCase() + name.slice(1)} dosáhlx ${scoreSuperlative}skóre ${score}/20! Překonáš je?`
     };
     const ogTitle: string = titles[gender as 'm' | 'f' | 'n'] || titles.n;
 
@@ -45,7 +46,7 @@
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="{ogTitle}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="{base}/results/{user}/{gender}/{score}" />
+    <meta property="og:url" content="{base}/results/{scoreEncoded}/{gender}/{name}" />
     <meta property="og:image" content="{base}/score/{score}.jpg" />
     <meta property="og:description" content="{ogDescription}" />
     <meta property="og:site_name" content="Dobronebozlo.cz" />
@@ -61,7 +62,7 @@
 
 
 <main>
-    <h1>{user.charAt(0).toUpperCase() + user.slice(1)} {$t("page.results.thirdPerson")} {score}/20!</h1>
+    <h1>{name.charAt(0).toUpperCase() + name.slice(1)} {$t("page.results.thirdPerson")} {score}/20!</h1>
     <p>{$t("page.results.motivation")}</p>
     <button class="again" on:click={playAgain}>{$t('page.results.motivationStart')}</button>
 </main>

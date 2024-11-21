@@ -108,18 +108,16 @@
             return;
         }
 
-        if (gender === '') {
-            gender = "n";
-        }
-
+        if (gender === '') gender = "n";
         const formattedName = encodeURIComponent(userName.trim());
-        goto(`${base}/results/${formattedName}/${gender}/${score}`);
+        const encoded_score = encodeScore(score)
+
+        goto(`${base}/results/${encoded_score}/${gender}/${formattedName}`);
     }
 
-    export function e(x: number): string {
-        const o = 1000;
-        const r = (x + o) ** 2;
-        return btoa(r.toString());
+    export function encodeScore(score: number): string {
+        const result = (score + 1000) ** 2;
+        return btoa(result.toString());
     }
 
     startRound();
