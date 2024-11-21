@@ -15,11 +15,26 @@
     </script>
 </svelte:head>
 
-<header>
-    <a href={base} class="logo">dobronebozlo.cz</a>
-    <LanguageSwitcher />
-</header>
+<div class="container">
+    <header>
+        <a href={base} class="logo">dobronebozlo.cz</a>
+        <LanguageSwitcher />
+    </header>
 
+    <main>
+        <slot />
+    </main>
+
+    <footer>
+        <div class="left">
+            <!-- <img src={`${base}/logo/vlada.svg`} alt="Logo 1" /> -->
+            <img src={`${base}/logo/zahranici.gif`} alt="MZCL" />
+        </div>
+        <div class="right">
+            <p>by Communally s.r.o.</p>
+        </div>
+    </footer>
+</div>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Martel:wght@600;700;800;900&family=Roboto:wght@400;500;700&display=swap');
@@ -83,6 +98,46 @@
     color: var(--grey-color);
 }
 
-</style>
+:global(.container) {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-<slot />
+:global(main) {
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+}
+
+:global(footer) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1rem 0.4rem;
+    background-color: var(--background-color);
+}
+
+:global(footer .left) {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+:global(footer .left img) {
+    height: 40px;
+}
+
+:global(footer .right) {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    color: var(--grey-color);
+    font-weight: 100;
+}
+
+:global(.logo) {
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--grey-color);
+}
+</style>
