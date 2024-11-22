@@ -61,18 +61,12 @@
 </svelte:head>
 
 
-<main>
-    <h1>{name.charAt(0).toUpperCase() + name.slice(1)} {$t("page.results.thirdPerson")} {score}/20!</h1>
-    <p>{$t("page.results.motivation")}</p>
-    <button class="again" on:click={playAgain}>{$t('page.results.motivationStart')}</button>
-</main>
+<h1>{name.charAt(0).toUpperCase() + name.slice(1)} {$t("page.results.thirdPerson")} {score}/20!</h1>
+<p>{$t("page.results.motivation")}</p>
+<button class="again" on:click={playAgain}>{$t('page.results.motivationStart')}</button>
+
 
 <style>
-main {
-    text-align: center;
-    padding: 20px;
-}
-
 button {
     padding: 10px 20px;
     font-size: 1em;

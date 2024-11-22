@@ -10,52 +10,56 @@
         label: 'Good' | 'Bad';
         location: string;
         date: string;
+        source: string;
     };
 
     const russianImages: ImageData[] = [
-        { image: `${assets}/russian/1.jpg`, label: 'Bad', location: '1 Kyiv, Ukraine', date: '2023-02-15' },
-        { image: `${assets}/russian/2.jpg`, label: 'Bad', location: '2 Kharkiv, Ukraine', date: '2023-03-10' },
-        { image: `${assets}/russian/3.jpg`, label: 'Bad', location: '3 Kyiv, Ukraine', date: '2023-02-15' },
-        { image: `${assets}/russian/4.jpg`, label: 'Bad', location: '4 Kharkiv, Ukraine', date: '2023-03-10' },
-        { image: `${assets}/russian/5.jpg`, label: 'Bad', location: '5 Kyiv, Ukraine', date: '2023-02-15' },
-        { image: `${assets}/russian/6.jpg`, label: 'Bad', location: '6 Kharkiv, Ukraine', date: '2023-03-10' },
-        { image: `${assets}/russian/7.jpg`, label: 'Bad', location: '7 Kyiv, Ukraine', date: '2023-02-15' },
-        { image: `${assets}/russian/8.jpg`, label: 'Bad', location: '8 Kharkiv, Ukraine', date: '2023-03-10' },
-        { image: `${assets}/russian/9.jpg`, label: 'Bad', location: '9 Kyiv, Ukraine', date: '2023-02-15' },
-        { image: `${assets}/russian/10.jpg`, label: 'Bad', location: '10 Kharkiv, Ukraine', date: '2023-03-10' },
-        { image: `${assets}/russian/1.jpg`, label: 'Bad', location: '11 Kyiv, Ukraine', date: '2023-02-15' },
-        { image: `${assets}/russian/2.jpg`, label: 'Bad', location: '12 Kharkiv, Ukraine', date: '2023-03-10' },
-        { image: `${assets}/russian/3.jpg`, label: 'Bad', location: '13 Kyiv, Ukraine', date: '2023-02-15' },
-        { image: `${assets}/russian/4.jpg`, label: 'Bad', location: '14 Kharkiv, Ukraine', date: '2023-03-10' },
-        { image: `${assets}/russian/5.jpg`, label: 'Bad', location: '15 Kyiv, Ukraine', date: '2023-02-15' },
-        { image: `${assets}/russian/6.jpg`, label: 'Bad', location: '16 Kharkiv, Ukraine', date: '2023-03-10' },
-        { image: `${assets}/russian/7.jpg`, label: 'Bad', location: '17 Kyiv, Ukraine', date: '2023-02-15' },
-        { image: `${assets}/russian/8.jpg`, label: 'Bad', location: '18 Kharkiv, Ukraine', date: '2023-03-10' },
-        { image: `${assets}/russian/9.jpg`, label: 'Bad', location: '19 Kyiv, Ukraine', date: '2023-02-15' },
-        { image: `${assets}/russian/10.jpg`, label: 'Bad', location: '20 Kharkiv, Ukraine', date: '2023-03-10' },
+        { image: `${assets}/russian/1.jpg`, label: 'Bad', location: 'Ukraine', date: '', source: '' },
+        { image: `${assets}/russian/2.jpg`, label: 'Bad', location: 'Ukraine', date: '', source: '' },
+        { image: `${assets}/russian/3.jpg`, label: 'Bad', location: 'Ukraine', date: '', source: '' },
+        { image: `${assets}/russian/4.jpg`, label: 'Bad', location: 'Ukraine', date: '', source: '' },
+        { image: `${assets}/russian/5.jpg`, label: 'Bad', location: 'Ukraine', date: '', source: '' },
+        { image: `${assets}/russian/6.jpg`, label: 'Bad', location: 'Ukraine', date: '', source: '' },
+        { image: `${assets}/russian/7.jpg`, label: 'Bad', location: 'Ukraine', date: '', source: '' },
+        { image: `${assets}/russian/8.jpg`, label: 'Bad', location: 'Ukraine', date: '', source: '' },
+        { image: `${assets}/russian/9.jpg`, label: 'Bad', location: 'Ukraine', date: '', source: '' },
+        { image: `${assets}/russian/10.jpg`, label: 'Bad', location: 'Ukraine', date: '', source: '' },
+        { image: `${assets}/russian/1.jpg`, label: 'Bad', location: 'Ukraine', date: '', source: '' },
+        { image: `${assets}/russian/2.jpg`, label: 'Bad', location: 'Ukraine', date: '', source: '' },
+        { image: `${assets}/russian/3.jpg`, label: 'Bad', location: 'Ukraine', date: '', source: '' },
+        { image: `${assets}/russian/4.jpg`, label: 'Bad', location: 'Ukraine', date: '', source: '' },
+        { image: `${assets}/russian/5.jpg`, label: 'Bad', location: 'Ukraine', date: '', source: '' },
+        { image: `${assets}/russian/6.jpg`, label: 'Bad', location: 'Ukraine', date: '', source: '' },
+        { image: `${assets}/russian/7.jpg`, label: 'Bad', location: 'Ukraine', date: '', source: '' },
+        { image: `${assets}/russian/8.jpg`, label: 'Bad', location: 'Ukraine', date: '', source: '' },
+        { image: `${assets}/russian/9.jpg`, label: 'Bad', location: 'Ukraine', date: '', source: '' },
+        { image: `${assets}/russian/10.jpg`, label: 'Bad', location: 'Ukraine', date: '', source: '' },
     ];
 
     const israeliImages: ImageData[] = [
-        { image: `${assets}/israeli/1.jpg`, label: 'Good', location: '1 Gaza City, Palestine', date: '2023-02-20' },
-        { image: `${assets}/israeli/2.jpg`, label: 'Good', location: '2 Rafah, Palestine', date: '2023-03-18' },
-        { image: `${assets}/israeli/3.jpg`, label: 'Good', location: '3 Gaza City, Palestine', date: '2023-02-20' },
-        { image: `${assets}/israeli/4.jpg`, label: 'Good', location: '4 Rafah, Palestine', date: '2023-03-18' },
-        { image: `${assets}/israeli/5.jpg`, label: 'Good', location: '5 Gaza City, Palestine', date: '2023-02-20' },
-        { image: `${assets}/israeli/6.jpg`, label: 'Good', location: '6 Rafah, Palestine', date: '2023-03-18' },
-        { image: `${assets}/israeli/7.jpg`, label: 'Good', location: '7 Gaza City, Palestine', date: '2023-02-20' },
-        { image: `${assets}/israeli/8.jpg`, label: 'Good', location: '8 Rafah, Palestine', date: '2023-03-18' },
-        { image: `${assets}/israeli/9.jpg`, label: 'Good', location: '9 Gaza City, Palestine', date: '2023-02-20' },
-        { image: `${assets}/israeli/10.jpg`, label: 'Good', location: '10 Rafah, Palestine', date: '2023-03-18' },
-        { image: `${assets}/israeli/1.jpg`, label: 'Good', location: '11 Gaza City, Palestine', date: '2023-02-20' },
-        { image: `${assets}/israeli/2.jpg`, label: 'Good', location: '12 Rafah, Palestine', date: '2023-03-18' },
-        { image: `${assets}/israeli/3.jpg`, label: 'Good', location: '13 Gaza City, Palestine', date: '2023-02-20' },
-        { image: `${assets}/israeli/4.jpg`, label: 'Good', location: '14 Rafah, Palestine', date: '2023-03-18' },
-        { image: `${assets}/israeli/5.jpg`, label: 'Good', location: '15 Gaza City, Palestine', date: '2023-02-20' },
-        { image: `${assets}/israeli/6.jpg`, label: 'Good', location: '16 Rafah, Palestine', date: '2023-03-18' },
-        { image: `${assets}/israeli/7.jpg`, label: 'Good', location: '17 Gaza City, Palestine', date: '2023-02-20' },
-        { image: `${assets}/israeli/8.jpg`, label: 'Good', location: '18 Rafah, Palestine', date: '2023-03-18' },
-        { image: `${assets}/israeli/9.jpg`, label: 'Good', location: '19 Gaza City, Palestine', date: '2023-02-20' },
-        { image: `${assets}/israeli/10.jpg`, label: 'Good', location: '20 Rafah, Palestine', date: '2023-03-18' },
+        { image: `${assets}/israeli/1.jpg`, label: 'Good', location: 'Palestine', date: '', source: '' },
+        { image: `${assets}/israeli/2.jpg`, label: 'Good', location: 'Palestine', date: '', source: '' },
+        { image: `${assets}/israeli/3.jpg`, label: 'Good', location: 'Palestine', date: '', source: '' },
+        { image: `${assets}/israeli/4.jpg`, label: 'Good', location: 'Palestine', date: '', source: '' },
+        { image: `${assets}/israeli/5.jpg`, label: 'Good', location: 'Palestine', date: '', source: '' },
+        { image: `${assets}/israeli/6.jpg`, label: 'Good', location: 'Palestine', date: '', source: '' },
+        { image: `${assets}/israeli/7.jpg`, label: 'Good', location: 'Palestine', date: '', source: '' },
+        { image: `${assets}/israeli/8.jpg`, label: 'Good', location: 'Palestine', date: '', source: '' },
+        { image: `${assets}/israeli/9.jpg`, label: 'Good', location: 'Palestine', date: '', source: '' },
+        { image: `${assets}/israeli/10.jpg`, label: 'Good', location: 'Palestine', date: '', source: '' },
+
+        { image: `${assets}/wiki/3130.jpg`, label: 'Good', location: 'Rafah Refugee Camp', date: '2024-01-01', source: 'https://www.middleeasteye.net/news/gaza-war-100-days-more-than-23000-dead-society-ruins'},
+        { image: `${assets}/wiki/3131.jpg`, label: 'Good', location: 'El-Remal', date: '2023-10-09', source: 'https://en.wikipedia.org/wiki/War_crimes_in_the_Israel%E2%80%93Hamas_war#/media/File:Damage_in_Gaza_Strip_during_the_October_2023_-_29.jpg'},
+        { image: `${assets}/wiki/3132.jpg`, label: 'Good', location: 'Gaza City', date: '2023-10-17', source: 'https://en.wikipedia.org/wiki/War_crimes_in_the_Israel%E2%80%93Hamas_war#/media/File:Fars_Photo_of_Destruction_in_Gaza_Strip_during_2023_War_18.jpg'},
+        { image: `${assets}/wiki/3133.jpg`, label: 'Good', location: 'Al-Ahli', date: '2023-10-18', source: 'https://en.wikipedia.org/wiki/Attacks_on_health_facilities_during_the_Israel%E2%80%93Hamas_war#/media/File:Aftermath_of_Al-Ahli_Arab_Hospital_explosion_(3).png'},
+        { image: `${assets}/wiki/3134.jpg`, label: 'Good', location: 'Gaza City', date: '2023-11-02', source: 'https://commons.wikimedia.org/wiki/Category:Operation_Swords_of_Iron#/media/File:IDF_D9R_bulldozer_-_Swords_of_Iron_-_2023-11-02.jpg'},
+        { image: `${assets}/wiki/3135.jpg`, label: 'Good', location: 'Watan Tower, Gaza City', date: '2023-10-08', source: 'https://commons.wikimedia.org/wiki/Category:Damage_in_Gaza_City_during_the_Israel%E2%80%93Hamas_war#/media/File:Damage_in_Gaza_Strip_during_the_October_2023_-_04.jpg'},
+        { image: `${assets}/wiki/3136.jpg`, label: 'Good', location: 'Gaza', date: '2023-12-06', source: 'https://commons.wikimedia.org/wiki/Category:Ruins_in_the_Gaza_Strip#/media/File:Gaza_war_damage_2023.jpg'},
+        { image: `${assets}/wiki/3137.jpg`, label: 'Good', location: 'Beit Lahiya', date: '2024-11-18', source: 'https://www.aa.com.tr/en/middle-east/at-least-17-killed-as-israeli-airstrike-flattens-home-in-gaza-s-beit-lahia/3396863'},
+        { image: `${assets}/wiki/3138.jpg`, label: 'Good', location: 'Rashad al-Shawwa Historical Cultural Center', date: '2023-11-29', source: 'https://www.aa.com.tr/en/middle-east/-israel-destroyed-central-archives-of-gaza-city-head-of-gaza-municipality/3068555'},
+        { image: `${assets}/wiki/3139.jpg`, label: 'Good', location: 'Gaza Library', date: '2023-11-27', source: 'https://lithub.com/gazas-main-public-library-has-been-destroyed/'},
+        //{ image: `${assets}/wiki/1.jpg`, label: 'Good', location: 'El-Remal', date: '2023-10-09', source: ''},
+        //{ image: `${assets}/wiki/1.jpg`, label: 'Good', location: 'El-Remal', date: '2023-10-09', source: ''},
     ];
 
     type Pair = [ImageData, ImageData];
@@ -143,65 +147,58 @@
     <meta name="twitter:image" content="https://i3.cn.cz/15/1661152163_P2022082202112.jpg" />
 </svelte:head>
 
-<main>
-    <h1>{$t('gameTitle')}</h1>
-    <p>{$t('round')} {currentRound + 1}/{totalRounds}</p>
+<h1>{$t('gameTitle')}</h1>
+<p>{$t('round')} {currentRound + 1}/{totalRounds}</p>
 
-    <div class="images">
-        {#each pairs[currentRound] as bombing}
-            <div class="image-container">
-                <button
-                    type="button"
-                    class="image-button {selectedImage === bombing ? (isCorrect ? 'selected' : 'incorrect') : ''}"
-                    style="background-image: url({bombing.image})"
-                    on:click={() => !showMessage && handleChoice(bombing.label, bombing)}
-                    on:keydown={(e) => !showMessage && e.key === 'Enter' && handleChoice(bombing.label, bombing)}
-                    disabled={showMessage}
-                    aria-label="btn"
-                >
-                </button>
-                <!-- Show description if the result is revealed -->
-                {#if showMessage}
-                    <p class="description">
-                        {bombing.location} - {bombing.date}
-                    </p>
-                {/if}
-            </div>
-        {/each}
-    </div>
+<div class="images">
+    {#each pairs[currentRound] as bombing}
+        <div class="image-container">
+            <button
+                type="button"
+                class="image-button {selectedImage === bombing ? (isCorrect ? 'selected' : 'incorrect') : ''}"
+                style="background-image: url({bombing.image})"
+                on:click={() => !showMessage && handleChoice(bombing.label, bombing)}
+                on:keydown={(e) => !showMessage && e.key === 'Enter' && handleChoice(bombing.label, bombing)}
+                disabled={showMessage}
+                aria-label="btn"
+            >
+            </button>
+            <!-- Show description if the result is revealed -->
+            {#if showMessage}
+                <p class="description">
+                    {bombing.location} - {bombing.date}
+                </p>
+            {/if}
+        </div>
+    {/each}
+</div>
 
-    {#if showMessage}
-        <p>{message}</p>
-        {#if currentRound < totalRounds - 1}
-            <button on:click={nextRound}>{$t('nextRound')}</button>
-        {:else}
-            <div class="enter">
-                <input
-                    type="text"
-                    bind:value={userName}
-                    placeholder={$t('page.game.enterName')}
-                    aria-label="Enter your name"
-                />
-                <select bind:value={gender} aria-label="Select your gender">
-                    <option value="" disabled selected>{$t('page.game.genderHint')}</option>
-                    <option value="m">{$t('page.game.genderMale')}</option>
-                    <option value="f">{$t('page.game.genderFemale')}</option>
-                    <option value="n">{$t('page.game.genderNeutral')}</option>
-                </select>
-                <button on:click={saveAndRedirect}>
-                    {$t('page.game.showResults')}
-                </button>
-            </div>
-        {/if}
+{#if showMessage}
+    <p>{message}</p>
+    {#if currentRound < totalRounds - 1}
+        <button on:click={nextRound}>{$t('nextRound')}</button>
+    {:else}
+        <div class="enter">
+            <input
+                type="text"
+                bind:value={userName}
+                placeholder={$t('page.game.enterName')}
+                aria-label="Enter your name"
+            />
+            <select bind:value={gender} aria-label="Select your gender">
+                <option value="" disabled selected>{$t('page.game.genderHint')}</option>
+                <option value="m">{$t('page.game.genderMale')}</option>
+                <option value="f">{$t('page.game.genderFemale')}</option>
+                <option value="n">{$t('page.game.genderNeutral')}</option>
+            </select>
+            <button on:click={saveAndRedirect}>
+                {$t('page.game.showResults')}
+            </button>
+        </div>
     {/if}
-</main>
+{/if}
 
 <style>
-main {
-    text-align: center;
-    padding: 20px;
-}
-
 .images {
     display: flex;
     justify-content: center;

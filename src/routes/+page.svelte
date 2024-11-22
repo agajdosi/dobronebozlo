@@ -28,16 +28,7 @@
     <meta name="twitter:image" content="https://i3.cn.cz/15/1661152163_P2022082202112.jpg" />
 </svelte:head>
 
-<main>
-    <h1>{$t('page.index.title')}</h1>
-    <p>{$t('page.index.subtitle')}</p>
-    <button on:click={startGame}>{$t('button.startGame')}</button>
-</main>
 
-<style>
-main {
-    text-align: center;
-    padding: 20px;
-}
-
-</style>
+<h1>{$t('page.index.title')}</h1>
+<p>{$t('page.index.subtitle')}</p>
+<button on:click={startGame}>{$t('button.startGame')}</button>
