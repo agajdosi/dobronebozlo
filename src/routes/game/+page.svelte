@@ -149,16 +149,24 @@
 
     <div class="images">
         {#each pairs[currentRound] as bombing}
-            <button
-                type="button"
-                class="image-button {selectedImage === bombing ? (isCorrect ? 'selected' : 'incorrect') : ''}"
-                style="background-image: url({bombing.image})"
-                on:click={() => !showMessage && handleChoice(bombing.label, bombing)}
-                on:keydown={(e) => !showMessage && e.key === 'Enter' && handleChoice(bombing.label, bombing)}
-                disabled={showMessage}
-                aria-label="btn"
-            >
-            </button>
+            <div class="image-container">
+                <button
+                    type="button"
+                    class="image-button {selectedImage === bombing ? (isCorrect ? 'selected' : 'incorrect') : ''}"
+                    style="background-image: url({bombing.image})"
+                    on:click={() => !showMessage && handleChoice(bombing.label, bombing)}
+                    on:keydown={(e) => !showMessage && e.key === 'Enter' && handleChoice(bombing.label, bombing)}
+                    disabled={showMessage}
+                    aria-label="btn"
+                >
+                </button>
+                <!-- Show description if the result is revealed -->
+                {#if showMessage}
+                    <p class="description">
+                        {bombing.location} - {bombing.date}
+                    </p>
+                {/if}
+            </div>
         {/each}
     </div>
 
@@ -201,6 +209,12 @@ main {
     margin: 20px 0;
 }
 
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .image-button {
     width: 40vw;
     height: 40vh;
@@ -218,6 +232,12 @@ main {
 
 .image-button.incorrect {
     outline: 4px solid var(--error-color);
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: var(--grey-color);
 }
 
 button {
