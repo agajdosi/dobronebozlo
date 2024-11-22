@@ -1,12 +1,12 @@
 {
     "page": {
         "index": {
-            "htmlTitle": "Dobronebozlo.cz | Oficiální kvíz - Vítejte",
+            "htmlTitle": "Oficiální kvíz české diplomacie - Vítejte",
             "title": "Dobro nebo zlo?",
             "subtitle": "Dokážete správně rozlišit mezi dobrým a špatným bombardováním? Pojďme to zjistit!"
         },
         "game": {
-            "htmlTitle": "Dobronebozlo.cz | Oficiální kvíz - Hra",
+            "htmlTitle": "Oficiální kvíz české diplomacie - Hra",
             "showResults": "Zobrazit Výsledky",
             "enterName": "Zadej tvoje jméno",
             "genderMale": "Mužský rod",
@@ -15,7 +15,7 @@
             "genderHint": "Oslovení"
         },
         "results": {
-            "htmlTitle": "Dobronebozlo.cz | Oficiální kvíz - Výsledky",
+            "htmlTitle": "Oficiální kvíz české diplomacie - Výsledky",
             "0": "Tak to se vůbec nepovedlo! Tvoje skóre ukazuje, že nedokážeš rozlišit mezi správným a špatným bombardováním civilistů. Je nám to líto, ale budeme tě muset nahlásit BIS.",
             "1": "To se fakt nepovedlo! Zkus si to ještě procvičit. A mysli na to, že v české diplomacii rozdělujeme civilisty na ty cenné a méněcenné.",
             "2": "To se teda moc nepovedlo!. Ale jsi na dobré cestě. Zkus to ještě procvičit. Pamatuj, že civilisty rozdělujeme na ty cenné a méněcenné.",
