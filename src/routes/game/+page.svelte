@@ -166,7 +166,7 @@
             <!-- Show description if the result is revealed -->
             {#if showMessage}
                 <p class="description">
-                    {bombing.location} - {bombing.date}
+                    {bombing.location}, {bombing.date}
                 </p>
             {/if}
         </div>
