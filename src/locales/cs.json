@@ -47,6 +47,16 @@
                         "f": "A to se vůbec nepovedlo! Horší už to být nemůže. Je nám to líto.",
                         "n": "A to se vůbec nepovedlo! Horší už to být nemůže. Je nám to líto."
                     }
+                },
+                "ogTitle": {
+                    "m": "{name} získal skóre {score}!",
+                    "f": "{name} získala skóre {score}!",
+                    "n": "{name} získalx skóre {score}!"
+                },
+                "ogDescription": {
+                    "m": "Vyzkoušej také oficiální trénink české diplomacie.",
+                    "f": "Vyzkoušej také oficiální trénink české diplomacie.",
+                    "n": "Vyzkoušej také oficiální trénink české diplomacie."
                 }
             },
             "10": {
@@ -73,6 +83,16 @@
                         "f": "Nahovno. To se fakt nepovedlo! Ještě je potřeba hodně cvičit.",
                         "n": "Nahovno. To se fakt nepovedlo! Ještě je potřeba hodně cvičit."
                     }
+                },
+                "ogTitle": {
+                    "m": "{name} získal skóre {score}!",
+                    "f": "{name} získala skóre {score}!",
+                    "n": "{name} získalx skóre {score}!"
+                },
+                "ogDescription": {
+                    "m": "Vyzkoušej také oficiální trénink české diplomacie.",
+                    "f": "Vyzkoušej také oficiální trénink české diplomacie.",
+                    "n": "Vyzkoušej také oficiální trénink české diplomacie."
                 }
             },
             "20": {
@@ -99,6 +119,16 @@
                         "f": "Moc se jí to nepovedlo, ale je na dobré cestě. S trochou tréninku to bude lepší.",
                         "n": "A to se moc nepovedlo, ale je na dobré cestě. S trochou tréninku to bude lepší."
                     }
+                },
+                "ogTitle": {
+                    "m": "{name} získal skóre {score}!",
+                    "f": "{name} získala skóre {score}!",
+                    "n": "{name} získalx skóre {score}!"
+                },
+                "ogDescription": {
+                    "m": "Vyzkoušej také oficiální trénink české diplomacie.",
+                    "f": "Vyzkoušej také oficiální trénink české diplomacie.",
+                    "n": "Vyzkoušej také oficiální trénink české diplomacie."
                 }
             },
             "30": {
@@ -125,6 +155,16 @@
                         "f": "Moc se jí to nepovedlo, ale je na dobré cestě. S trochou tréninku to bude lepší.",
                         "n": "A to se teda moc nepovedlo, ale je to na dobré cestě. S trochou tréninku to bude lepší."
                     }
+                },
+                "ogTitle": {
+                    "m": "{name} získal skóre {score}!",
+                    "f": "{name} získala skóre {score}!",
+                    "n": "{name} získalx skóre {score}!"
+                },
+                "ogDescription": {
+                    "m": "Vyzkoušej také oficiální trénink české diplomacie.",
+                    "f": "Vyzkoušej také oficiální trénink české diplomacie.",
+                    "n": "Vyzkoušej také oficiální trénink české diplomacie."
                 }
             },
             "40": {
@@ -151,6 +191,16 @@
                         "f": "Její podprůměrné skóre dokazuje, že rozlišuje správné a špatné bombardování hodně náhodně. Chce to více tréninku než se z hlavy podaří vymítit hybridní hrozbu univerzálních lidských práv. Je to dobrý začátek, ale je potřeba ještě zapracovat.",
                         "n": "Toto podprůměrné skóre dokazuje, že rozlišuje správné a špatné bombardování hodně náhodně. Chce to více tréninku než se z hlavy podaří vymítit hybridní hrozbu univerzálních lidských práv. Je to dobrý začátek, ale je potřeba ještě zapracovat."
                     }
+                },
+                "ogTitle": {
+                    "m": "{name} získal skóre {score}!",
+                    "f": "{name} získala skóre {score}!",
+                    "n": "{name} získalx skóre {score}!"
+                },
+                "ogDescription": {
+                    "m": "Zadaří se i tobě v tréninku české diplomacie?",
+                    "f": "Zadaří se i tobě v tréninku české diplomacie?",
+                    "n": "Zadaří se i tobě v tréninku české diplomacie?"
                 }
             },
             "50": {
@@ -177,6 +227,16 @@
                         "f": "Jeho zcela průměrné skóre jasně dokazuje, že rozlišuje správné a špatné bombardování naprosto náhodně. Chce to více tréninku než se z hlavy podaří vymítit hybridní hrozbu univerzálních lidských práv.",
                         "n": "Jeho zcela průměrné skóre jasně dokazuje, že rozlišuje správné a špatné bombardování naprosto náhodně. Chce to více tréninku než se z hlavy podaří vymítit hybridní hrozbu univerzálních lidských práv."
                     }
+                },
+                "ogTitle": {
+                    "m": "{name} získal zcela průměrné skóre {score}!",
+                    "f": "{name} získala zcela průměrné skóre {score}!",
+                    "n": "{name} získalx zcela průměrné skóre {score}!"
+                },
+                "ogDescription": {
+                    "m": "Zadaří se i tobě v tréninku české diplomacie?",
+                    "f": "Zadaří se i tobě v tréninku české diplomacie?",
+                    "n": "Zadaří se i tobě v tréninku české diplomacie?"
                 }
             },
             "60": {
@@ -203,6 +263,16 @@
                         "f": "Její lehce naprůměrný výsledek ukazuje, že mezi dobrým a špatným bombardování rozlišuje tak trochu náhodně. Ale je na dobré cestě. Chce to ještě trochu procvičit, kdo je člověk a kdo jen číslo.",
                         "n": "Tento lehce naprůměrný výsledek ukazuje, že mezi dobrým a špatným bombardování rozlišuje tak trochu náhodně. Ale je na dobré cestě. Chce to ještě trochu procvičit, kdo je člověk a kdo jen číslo."
                     }
+                },
+                "ogTitle": {
+                    "m": "{name} získal téměř průměrné skóre {score}!",
+                    "f": "{name} získala téměř průměrné skóre {score}!",
+                    "n": "{name} získalx téměř průměrné skóre {score}!"
+                },
+                "ogDescription": {
+                    "m": "Zadaří se i tobě v tréninku české diplomacie?",
+                    "f": "Zadaří se i tobě v tréninku české diplomacie?",
+                    "n": "Zadaří se i tobě v tréninku české diplomacie?"
                 }
             },
             "70": {
@@ -213,9 +283,9 @@
                         "n": "Dosáhlx jsi fajn skóre"
                     },
                     "thirdPerson": {
-                        "m": "dosáhl skóre",
-                        "f": "dosáhla skóre",
-                        "n": "dosáhlx skóre"
+                        "m": "Podaří se ti ho překonat v tréninku české diplomacie?",
+                        "f": "Podaří se ti ji překonat v tréninku české diplomacie?",
+                        "n": "Podaří se ti to překonat v tréninku české diplomacie?"
                     }
                 },
                 "paragraph": {
@@ -229,6 +299,16 @@
                         "f": "Skóre je docela dobré, ale stále je co zlepšovat. Na pozici v české diplomaci, ani na blízkovýchodní redaktorky ČT, to ještě úplně není, ale je to na dobré cestě. Bude to chtít si ještě trochu víc ujasnit, jací civilisté jsou lidé a jací jen čísla.",
                         "n": "Skóre je docela dobré, ale stále je co zlepšovat. Na pozici v české diplomaci, ani v blízkovýchodní redakci ČT, to ještě úplně není, ale je to na dobré cestě. Bude to chtít si ještě trochu víc ujasnit, jací civilisté jsou lidé a jací jen čísla."
                     }
+                },
+                "ogTitle": {
+                    "m": "{name} získal skóre {score}!",
+                    "f": "{name} získala skóre {score}!",
+                    "n": "{name} získalx skóre {score}!"
+                },
+                "ogDescription": {
+                    "m": "Podaří se ti ho překonat v tréninku české diplomacie?",
+                    "f": "Podaří se ti ji překonat v tréninku české diplomacie?",
+                    "n": "Podaří se ti to překonat v tréninku české diplomacie?"
                 }
             },
             "80": {
@@ -255,6 +335,16 @@
                         "f": "Její výsledek je vynikající. S trochou dalšího tréninku by se mohla stát českou diplomatkou. Zatím to však vypadá spíš na blízkovýchodního zpravodajku ČT.",
                         "n": "Tento výsledek je vynikající. S trochou dalšího tréninku by se mohlx stát součástí české diplomacie. Zatím to však vypadá spíš na blízkovýchodní redakci ČT."
                     }
+                },
+                "ogTitle": {
+                    "m": "{name} získal skvělé skóre {score}!",
+                    "f": "{name} získala skvělé skóre {score}!",
+                    "n": "{name} získalx skvělé skóre {score}!"
+                },
+                "ogDescription": {
+                    "m": "Podaří se ti ho překonat v tréninku české diplomacie?",
+                    "f": "Podaří se ti ji překonat v tréninku české diplomacie?",
+                    "n": "Podaří se ti to překonat v tréninku české diplomacie?"
                 }
             },
             "90": {
@@ -281,6 +371,16 @@
                         "f": "Její výsledek je téměř dokonalý. To ukazuje vysoké kompetence v oblasti rozlišování a strašnou připravenost hybridním hrozbám univerzálních lidských práv. Je tak plně připraven být součástí špičkové české diplomacie.",
                         "n": "Tento výsledek je téměř dokonalý. To ukazuje vysoké kompetence v oblasti rozlišování a strašnou připravenost hybridním hrozbám univerzálních lidských práv. Je tak plně připraven být součástí špičkové české diplomacie."
                     }
+                },
+                "ogTitle": {
+                    "m": "{name} získal výtečné skóre {score}!",
+                    "f": "{name} získala výtečné skóre {score}!",
+                    "n": "{name} získalx výtečné skóre {score}!"
+                },
+                "ogDescription": {
+                    "m": "Podaří se ti ho překonat v tréninku české diplomacie?",
+                    "f": "Podaří se ti ji překonat v tréninku české diplomacie?",
+                    "n": "Podaří se ti to překonat v tréninku české diplomacie?"
                 }
             },
             "100": {
@@ -307,6 +407,16 @@
                         "f": "Z perfektnosti jejího skóre až mrazí v zádech. A tím se řadí po bok opravdových špiček české diplomacie. Z naprostých hlubin lidské duše nezbývá než gratulovat k strašně dobrému úspěchu!",
                         "n": "Z perfektnosti tohoto skóre až mrazí v zádech. A tím se řadí po bok opravdových špiček české diplomacie. Z naprostých hlubin lidské duše nezbývá než gratulovat k strašně dobrému úspěchu!"
                     }
+                },
+                "ogTitle": {
+                    "m": "{name} získal perfektní skóre {score}!",
+                    "f": "{name} získala prfektní skóre {score}!",
+                    "n": "{name} získalx perfektní {score}!"
+                },
+                "ogDescription": {
+                    "m": "Podaří se ti ho překonat v tréninku české diplomacie?",
+                    "f": "Podaří se ti ji překonat v tréninku české diplomacie?",
+                    "n": "Podaří se ti to překonat v tréninku české diplomacie?"
                 }
             }
         }

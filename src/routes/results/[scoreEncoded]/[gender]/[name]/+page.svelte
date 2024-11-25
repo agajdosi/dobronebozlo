@@ -26,24 +26,6 @@
         return matches ? decodeURIComponent(matches[1]) : null;
     }
 
-    let isMe = false;
-
-    function getScoreSuperlative(score: number): string {
-        if (score <= 5) return 'nuzného ';
-        if (score <= 10) return '';
-        if (score <= 15) return 'strašně dobrého ';
-        if (score <= 19) return 'hrozně skvělého ';
-        return 'děsivě perfektního';
-    }
-    const scoreSuperlative: string = getScoreSuperlative(score);
-    const titles: Record<'m' | 'f' | 'n', string> = {
-        m: `${name.charAt(0).toUpperCase() + name.slice(1)} dosáhl ${scoreSuperlative}skóre ${score}/20! Překonáš ho?`,
-        f: `${name.charAt(0).toUpperCase() + name.slice(1)} dosáhla ${scoreSuperlative}skóre ${score}/20! Překonáš ji?`,
-        n: `${name.charAt(0).toUpperCase() + name.slice(1)} dosáhlx ${scoreSuperlative}skóre ${score}/20! Překonáš je?`
-    };
-    const ogTitle: string = titles[gender as 'm' | 'f' | 'n'] || titles.n;
-
-
     function getScorePercentage(score: number): string {
         if (score == 0) return '0';
         if (score <= 3) return '10';
@@ -58,19 +40,8 @@
         if (score == 20) return '100';
         return '0';
     }
-
     let scorePercentage = getScorePercentage(score);
-
-
-    function getDescriptions(score: number): string {
-        if (score <= 5) return 'Výsledek v oficiálním kvízu české diplomacie ukazuje nedostatečné kompetence v oblasti rozlišování dobrého a špatného bombardování civilního obyvatelstva. Otestujte i Vy svoje schopnosti!';
-        if (score <= 10) return 'Výsledek v oficiálním kvízu české diplomacie ukazuje zcela průměrné kompetence v oblasti rozlišování dobrého a špatného bombardování civilního obyvatelstva. Otestujte i Vy svoje schopnosti!';
-        if (score <= 15) return 'Výsledek v oficiálním kvízu české diplomacie ukazuje nadprůměrné kompetence v oblasti rozlišování dobrého a špatného bombardování civilního obyvatelstva. Otestujte i Vy svoje schopnosti!';
-        if (score <= 19) return 'Výsledek v oficiálním kvízu české diplomacie je důkazem výborných kompetencí v oblasti rozlišování dobrého a špatného bombardování civilního obyvatelstva. Otestujte i Vy svoje schopnosti!';
-        return 'Tento bezchybný výsledek je v 100% souladu s postoji české diplomacie. A dokazuje nebývale perfektní kompetence v oblasti rozlišování dobrého a špatného bombardování civilního obyvatelstva. Otestujte i Vy svoje schopnosti!';
-    }
-    const ogDescription: string = getDescriptions(score);
-
+    let isMe = false;
     onMount(() => {
         isMe = getCookie('name') === name;
         console.log("ISME=", isMe);
@@ -81,19 +52,19 @@
     <title>{$t('page.results.htmlTitle')}</title>
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="{ogTitle}" />
+    <meta property="og:title" content={$t(`page.results.${scorePercentage}.ogTitle.${gender}`, { values: {name: name, score: score}})} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{base}/results/{scoreEncoded}/{gender}/{name}" />
     <meta property="og:image" content="{base}/score/{score}.jpg" />
-    <meta property="og:description" content="{ogDescription}" />
+    <meta property="og:description" content={$t(`page.results.${scorePercentage}.ogDescription.${gender}`)} />
     <meta property="og:site_name" content="Dobronebozlo.cz" />
     <meta property="og:locale" content="cs_CZ" />
     <meta property="og:locale:alternate" content="en_US" />
 
     <!-- Twitter Meta Tags (Optional, for better sharing on Twitter) -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="{ogTitle}" />
-    <meta name="twitter:description" content="{ogDescription}" />
+    <meta name="twitter:title" content={$t(`page.results.${scorePercentage}.ogTitle.${gender}`, { values: {name: name, score: score}})} />
+    <meta name="twitter:description" content={$t(`page.results.${scorePercentage}.ogDescription.${gender}`)} />
     <meta name="twitter:image" content="{base}/score/{score}.jpg" />
 </svelte:head>
 
