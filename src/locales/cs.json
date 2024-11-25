@@ -1,12 +1,16 @@
 {
     "page": {
         "index": {
-            "htmlTitle": "Oficiální kvíz české diplomacie - Vítejte",
-            "title": "Dobro nebo zlo?",
-            "subtitle": "Dokážete správně rozlišit mezi dobrým a špatným bombardováním? Pojďme to zjistit!"
+            "htmlTitle": "Tréninkový kvíz české diplomacie - Úvod",
+            "ogTitle": "Tréninkový kvíz české diplomacie",
+            "ogDescription": "Vyzkoušejte, zda zvládnete práci české diplomacie.",
+            "title": "Kvíz české diplomacie",
+            "subtitle": "Vzhledem k rozhodnutí Mezinárodního trestního soudu (ICC) uvolňujeme tréninkovou aplikaci české diplomacie veřejnosti. Dokážete nepodlehnout hybridní hrozbě univerzálních lidských práv a správně rozlišit mezi dobrým a špatným bombardováním? Pojďme to zjistit!"
         },
         "game": {
-            "htmlTitle": "Oficiální kvíz české diplomacie - Hra",
+            "htmlTitle": "Tréninkový kvíz české diplomacie - Hra",
+            "ogTitle": "Tréninkový kvíz české diplomacie",
+            "ogDescription": "Vyzkoušejte, zda zvládnete práci české diplomacie.",
             "showResults": "Zobrazit Výsledky",
             "enterName": "Zadej tvoje jméno",
             "genderMale": "Mužský rod",
@@ -15,7 +19,7 @@
             "genderHint": "Oslovení"
         },
         "results": {
-            "htmlTitle": "Oficiální kvíz české diplomacie - Výsledky",
+            "htmlTitle": "Tréninkový kvíz české diplomacie - Výsledky",
             "0": "Tak to se vůbec nepovedlo! Tvoje skóre ukazuje, že nedokážeš rozlišit mezi správným a špatným bombardováním civilistů. Je nám to líto, ale budeme tě muset nahlásit BIS.",
             "1": "To se fakt nepovedlo! Zkus si to ještě procvičit. A mysli na to, že v české diplomacii rozdělujeme civilisty na ty cenné a méněcenné.",
             "2": "To se teda moc nepovedlo!. Ale jsi na dobré cestě. Zkus to ještě procvičit. Pamatuj, že civilisty rozdělujeme na ty cenné a méněcenné.",

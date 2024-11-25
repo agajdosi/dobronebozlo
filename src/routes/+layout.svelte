@@ -105,9 +105,16 @@
 }
 
 :global(main) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     flex: 1;
-    padding: 1rem;
+    padding: 0 1rem;
     text-align: center;
+}
+
+:global(main p) {
+    max-width: 60vw;
 }
 
 :global(footer) {
