@@ -12,6 +12,10 @@
     const gender = data.gender;
 
     function playAgain() {
+        goto(`${base}/game`);
+    }
+
+    function onStart() {
         goto(`${base}/`);
     }
 
@@ -85,10 +89,12 @@
     {#if gender==="n"}
         <h1>{$t("page.results.secondPersonN")} {score}/20!</h1>
     {/if}
+
+    <button class="again" on:click={playAgain}>{$t('page.results.tryAgain')}</button>
 {:else}
     <h1>{name.charAt(0).toUpperCase() + name.slice(1)} {$t("page.results.thirdPerson")} {score}/20!</h1>
     <p>{$t("page.results.motivation")}</p>
-    <button class="again" on:click={playAgain}>{$t('page.results.motivationStart')}</button>
+    <button class="again" on:click={onStart}>{$t('page.results.motivationStart')}</button>
 {/if}
 
 
