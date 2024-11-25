@@ -211,7 +211,7 @@
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin: 20px 0;
+    margin: 0;
 }
 
 .image-container {

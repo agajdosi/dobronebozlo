@@ -115,6 +115,7 @@
 
 :global(main p) {
     max-width: 60vw;
+    margin: 0px;
 }
 
 :global(footer) {
