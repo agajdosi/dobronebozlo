@@ -112,11 +112,19 @@
             return;
         }
 
+        setCookie("name", userName, 30);
         if (gender === '') gender = "n";
         const formattedName = encodeURIComponent(userName.trim());
         const encoded_score = encodeScore(score)
 
         goto(`${base}/results/${encoded_score}/${gender}/${formattedName}`);
+    }
+
+    function setCookie(name: string, value: string, days: number) {
+        const date = new Date();
+        date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+        const expires = `expires=${date.toUTCString()}`;
+        document.cookie = `${name}=${value};${expires};path=/`;
     }
 
     export function encodeScore(score: number): string {

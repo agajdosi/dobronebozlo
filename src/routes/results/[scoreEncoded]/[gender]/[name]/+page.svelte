@@ -2,6 +2,7 @@
     import { goto } from '$app/navigation';
     import { t } from 'svelte-i18n';
     import { base } from '$app/paths';
+    import { onMount } from 'svelte';
 
     // Access data provided by the load function in +page.server.ts
     export let data;
@@ -13,6 +14,15 @@
     function playAgain() {
         goto(`${base}/`);
     }
+
+    function getCookie(name: string): string | null {
+        const matches = document.cookie.match(new RegExp(
+            `(?:^|; )${name.replace(/([.*+?^${}()|[\]\\])/g, '\\$1')}=([^;]*)`
+        ));
+        return matches ? decodeURIComponent(matches[1]) : null;
+    }
+
+    let isMe = false;
 
     function getScoreSuperlative(score: number): string {
         if (score <= 5) return 'nuzného ';
@@ -38,6 +48,11 @@
         return 'Tento bezchybný výsledek je v 100% souladu s postoji české diplomacie. A dokazuje nebývale perfektní kompetence v oblasti rozlišování dobrého a špatného bombardování civilního obyvatelstva. Otestujte i Vy svoje schopnosti!';
     }
     const ogDescription: string = getDescriptions(score);
+
+    onMount(() => {
+        isMe = getCookie('name') === name;
+        console.log("ISME=", isMe);
+    });
 </script>
 
 <svelte:head>
