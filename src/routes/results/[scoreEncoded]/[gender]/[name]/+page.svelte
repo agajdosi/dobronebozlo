@@ -75,10 +75,22 @@
     <meta name="twitter:image" content="{base}/score/{score}.jpg" />
 </svelte:head>
 
+{#if isMe}
+    {#if gender==="f"}
+        <h1>{$t("page.results.secondPersonF")} {score}/20!</h1>
+    {/if}
+    {#if gender==="m"}
+        <h1>{$t("page.results.secondPersonM")} {score}/20!</h1>
+    {/if}
+    {#if gender==="n"}
+        <h1>{$t("page.results.secondPersonN")} {score}/20!</h1>
+    {/if}
+{:else}
+    <h1>{name.charAt(0).toUpperCase() + name.slice(1)} {$t("page.results.thirdPerson")} {score}/20!</h1>
+    <p>{$t("page.results.motivation")}</p>
+    <button class="again" on:click={playAgain}>{$t('page.results.motivationStart')}</button>
+{/if}
 
-<h1>{name.charAt(0).toUpperCase() + name.slice(1)} {$t("page.results.thirdPerson")} {score}/20!</h1>
-<p>{$t("page.results.motivation")}</p>
-<button class="again" on:click={playAgain}>{$t('page.results.motivationStart')}</button>
 
 
 <style>
