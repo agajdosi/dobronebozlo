@@ -44,11 +44,29 @@
     const ogTitle: string = titles[gender as 'm' | 'f' | 'n'] || titles.n;
 
 
+    function getScorePercentage(score: number): string {
+        if (score == 0) return '0';
+        if (score <= 3) return '10';
+        if (score <= 6) return '20';
+        if (score <= 8) return '30';
+        if (score == 9) return '40'; // average
+        if (score == 10) return '50'; //AVERAGE
+        if (score == 11) return '60'; // average
+        if (score <= 14) return '70';
+        if (score <= 17) return '80';
+        if (score <= 19) return '90';
+        if (score == 20) return '100';
+        return '0';
+    }
+
+    let scorePercentage = getScorePercentage(score);
+
+
     function getDescriptions(score: number): string {
-        if (score <= 5) return 'Tento výsledek v oficiálním kvízu české diplomacie ukazuje nedostatečné kompetence v oblasti rozlišování dobrého a špatného bombardování civilního obyvatelstva. Otestujte i Vy svoje schopnosti!';
-        if (score <= 10) return 'Tento výsledek v oficiálním kvízu české diplomacie ukazuje zcela průměrné kompetence v oblasti rozlišování dobrého a špatného bombardování civilního obyvatelstva. Otestujte i Vy svoje schopnosti!';
-        if (score <= 15) return 'Tento výsledek v oficiálním kvízu české diplomacie ukazuje nadprůměrné kompetence v oblasti rozlišování dobrého a špatného bombardování civilního obyvatelstva. Otestujte i Vy svoje schopnosti!';
-        if (score <= 19) return 'Tento výsledek v oficiálním kvízu české diplomacie je důkazem výborných kompetencí v oblasti rozlišování dobrého a špatného bombardování civilního obyvatelstva. Otestujte i Vy svoje schopnosti!';
+        if (score <= 5) return 'Výsledek v oficiálním kvízu české diplomacie ukazuje nedostatečné kompetence v oblasti rozlišování dobrého a špatného bombardování civilního obyvatelstva. Otestujte i Vy svoje schopnosti!';
+        if (score <= 10) return 'Výsledek v oficiálním kvízu české diplomacie ukazuje zcela průměrné kompetence v oblasti rozlišování dobrého a špatného bombardování civilního obyvatelstva. Otestujte i Vy svoje schopnosti!';
+        if (score <= 15) return 'Výsledek v oficiálním kvízu české diplomacie ukazuje nadprůměrné kompetence v oblasti rozlišování dobrého a špatného bombardování civilního obyvatelstva. Otestujte i Vy svoje schopnosti!';
+        if (score <= 19) return 'Výsledek v oficiálním kvízu české diplomacie je důkazem výborných kompetencí v oblasti rozlišování dobrého a špatného bombardování civilního obyvatelstva. Otestujte i Vy svoje schopnosti!';
         return 'Tento bezchybný výsledek je v 100% souladu s postoji české diplomacie. A dokazuje nebývale perfektní kompetence v oblasti rozlišování dobrého a špatného bombardování civilního obyvatelstva. Otestujte i Vy svoje schopnosti!';
     }
     const ogDescription: string = getDescriptions(score);
@@ -80,19 +98,12 @@
 </svelte:head>
 
 {#if isMe}
-    {#if gender==="f"}
-        <h1>{$t("page.results.secondPersonF")} {score}/20!</h1>
-    {/if}
-    {#if gender==="m"}
-        <h1>{$t("page.results.secondPersonM")} {score}/20!</h1>
-    {/if}
-    {#if gender==="n"}
-        <h1>{$t("page.results.secondPersonN")} {score}/20!</h1>
-    {/if}
-
+    <h1>{$t(`page.results.${scorePercentage}.title.secondPerson.${gender}`)} {score}/20!</h1>
+    <p>{$t(`page.results.${scorePercentage}.paragraph.secondPerson.${gender}`)}</p>
     <button class="again" on:click={playAgain}>{$t('page.results.tryAgain')}</button>
 {:else}
-    <h1>{name.charAt(0).toUpperCase() + name.slice(1)} {$t("page.results.thirdPerson")} {score}/20!</h1>
+    <h1>{name.charAt(0).toUpperCase() + name.slice(1)} {$t(`page.results.${scorePercentage}.title.thirdPerson.${gender}`)} {score}/20!</h1>
+    <p>{$t(`page.results.${scorePercentage}.paragraph.thirdPerson.${gender}`)}</p>
     <p>{$t("page.results.motivation")}</p>
     <button class="again" on:click={onStart}>{$t('page.results.motivationStart')}</button>
 {/if}

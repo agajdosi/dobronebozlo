@@ -20,25 +20,295 @@
         },
         "results": {
             "htmlTitle": "Tréninkový kvíz české diplomacie - Výsledky",
-            "0": "Tak to se vůbec nepovedlo! Tvoje skóre ukazuje, že nedokážeš rozlišit mezi správným a špatným bombardováním civilistů. Je nám to líto, ale budeme tě muset nahlásit BIS.",
-            "1": "To se fakt nepovedlo! Zkus si to ještě procvičit. A mysli na to, že v české diplomacii rozdělujeme civilisty na ty cenné a méněcenné.",
-            "2": "To se teda moc nepovedlo!. Ale jsi na dobré cestě. Zkus to ještě procvičit. Pamatuj, že civilisty rozdělujeme na ty cenné a méněcenné.",
-            "3": "To se moc nepovedlo. Ale jsi na dobré cestě. Zkus to ještě procvičit. Pamatuj, že civilisty rozdělujeme na ty cenné a méněcenné.",
-            "4": "Nic moc. Ale jsi na dobré cestě. Zkus to ještě procvičit. Pamatuj, že civilisty rozdělujeme na ty cenné a méněcenné.",
-            "5": "Celkem průměrné. Očividně rozlišuješ mezi dobrý a špatným bombardováním tak nějak random. Zkus to ještě jednou a hlavně pamatuj, že civilisty rozdělujeme na ty cenné a méněcenné.",
-            "6": "Tvůj výsledek celkem ujde! Ale chce to ještě trochu procvičit, kdo je cenný a kdo méněcenný civilista.",
-            "7": "Hele docela dobrý výsledek. Na Českou televizi ještě úplně nemáš, ale jsi na dobré cestě. Zkus si ještě trochu víc ujasnit, jací civilisté jsou lidé a jací jen čísla.",
-            "8": "Strašně dobrý výsledek! S těmito znalostmi dělení civilistů na cenné a méněcenné, se můžeš z fleku hlásit na pozici blízkovýchodního redaktora v ČT. Zkus to ještě jednou a pamatuj na rozdíl mezi: raketový útok zavraždil dva civilisty a při zásahu cíle zemřely dvě osoby.",
-            "9": "Skoro dokonalé skóre! Už nechybí moc a zařadíš se pobok špiček české diplomacie. Nevzdávej to a bude Tě čekat zářná budoucnost!",
-            "10": "Tvůj výsledek se řadí na špičku české diplomacie! Opravdu gratulujeme...",
-            "thirdPerson": "drží skóre",
-            "secondPersonF": "Gratulujeme, získala jsi skóre",
-            "secondPersonM": "Gratulujeme, získal jsi skóre",
-            "secondPersonN": "Gratulujeme, získalx jsi skóre",
-            "motivation": "Podaří se Ti to překonat?",
+            "motivation": "Podaří se Vám to překonat?",
             "motivationStart": "Zkusit kvíz",
             "tryAgain": "Zkusit znovu",
-            "saveName": "Uložit a sdílet"
+            "0": {
+                "title": {
+                    "secondPerson": {
+                        "m": "Dosáhl jsi nicotného skóre",
+                        "f": "Dosáhla jsi nicotného skóre",
+                        "n": "Dosáhlx jsi nicotného skóre"
+                    },
+                    "thirdPerson": {
+                        "m": "dosáhl nicotného skóre",
+                        "f": "dosáhla nicotného skóre",
+                        "n": "dosáhlx nicotného skóre"
+                    }
+                },
+                "paragraph": {
+                    "secondPerson": {
+                        "m": "Tak to se ti vůbec nepovedlo! Musíš to zopakovat.",
+                        "f": "Tak to se ti vůbec nepovedlo! Musíš to zopakovat.",
+                        "n": "Tak to se ti vůbec nepovedlo! Musíš to zopakovat."
+                    },
+                    "thirdPerson": {
+                        "m": "A to se vůbec nepovedlo! Horší už to být nemůže. Je nám to líto.",
+                        "f": "A to se vůbec nepovedlo! Horší už to být nemůže. Je nám to líto.",
+                        "n": "A to se vůbec nepovedlo! Horší už to být nemůže. Je nám to líto."
+                    }
+                }
+            },
+            "10": {
+                "title": {
+                    "secondPerson": {
+                        "m": "Dosáhl jsi skóre",
+                        "f": "Dosáhla jsi skóre",
+                        "n": "Dosáhlx jsi skóre"
+                    },
+                    "thirdPerson": {
+                        "m": "dosáhl skóre",
+                        "f": "dosáhla skóre",
+                        "n": "dosáhlx skóre"
+                    }
+                },
+                "paragraph": {
+                    "secondPerson": {
+                        "m": "To se ti ale fakt nepovedlo! Zkus si to ještě procvičit.",
+                        "f": "To se ti ale fakt nepovedlo! Zkus si to ještě procvičit.",
+                        "n": "To se ti ale fakt nepovedlo! Zkus si to ještě procvičit."
+                    },
+                    "thirdPerson": {
+                        "m": "Nahovno. To se fakt nepovedlo! Ještě je potřeba hodně cvičit.",
+                        "f": "Nahovno. To se fakt nepovedlo! Ještě je potřeba hodně cvičit.",
+                        "n": "Nahovno. To se fakt nepovedlo! Ještě je potřeba hodně cvičit."
+                    }
+                }
+            },
+            "20": {
+                "title": {
+                    "secondPerson": {
+                        "m": "Dosáhl jsi skóre",
+                        "f": "Dosáhla jsi skóre",
+                        "n": "Dosáhlx jsi skóre"
+                    },
+                    "thirdPerson": {
+                        "m": "dosáhl skóre",
+                        "f": "dosáhla skóre",
+                        "n": "dosáhlx skóre"
+                    }
+                },
+                "paragraph": {
+                    "secondPerson": {
+                        "m": "To se ti opravdu moc nepovedlo! Ale jsi na dobré cestě. Zkus to ještě procvičit.",
+                        "f": "To se ti opravdu moc nepovedlo! Ale jsi na dobré cestě. Zkus to ještě procvičit.",
+                        "n": "To se ti opravdu moc nepovedlo! Ale jsi na dobré cestě. Zkus to ještě procvičit."
+                    },
+                    "thirdPerson": {
+                        "m": "Moc se mu to nepovedlo, ale je na dobré cestě. S trochou tréninku to bude lepší.",
+                        "f": "Moc se jí to nepovedlo, ale je na dobré cestě. S trochou tréninku to bude lepší.",
+                        "n": "A to se moc nepovedlo, ale je na dobré cestě. S trochou tréninku to bude lepší."
+                    }
+                }
+            },
+            "30": {
+                "title": {
+                    "secondPerson": {
+                        "m": "Dosáhl jsi skóre",
+                        "f": "Dosáhla jsi skóre",
+                        "n": "Dosáhlx jsi skóre"
+                    },
+                    "thirdPerson": {
+                        "m": "dosáhl skóre",
+                        "f": "dosáhla skóre",
+                        "n": "dosáhlx skóre"
+                    }
+                },
+                "paragraph": {
+                    "secondPerson": {
+                        "m": "Tak to se ti fakt moc nepovedlo. Ale jsi na dobré cestě. Zkus to ještě procvičit.",
+                        "f": "Tak to se ti fakt moc nepovedlo. Ale jsi na dobré cestě. Zkus to ještě procvičit.",
+                        "n": "Tak to se ti fakt moc nepovedlo. Ale jsi na dobré cestě. Zkus to ještě procvičit."
+                    },
+                    "thirdPerson": {
+                        "m": "Moc se mu to nepovedlo, ale je na dobré cestě. S trochou tréninku to bude lepší.",
+                        "f": "Moc se jí to nepovedlo, ale je na dobré cestě. S trochou tréninku to bude lepší.",
+                        "n": "A to se teda moc nepovedlo, ale je to na dobré cestě. S trochou tréninku to bude lepší."
+                    }
+                }
+            },
+            "40": {
+                "title": {
+                    "secondPerson": {
+                        "m": "Dosáhl jsi skóre",
+                        "f": "Dosáhla jsi skóre",
+                        "n": "Dosáhlx jsi skóre"
+                    },
+                    "thirdPerson": {
+                        "m": "dosáhl skóre",
+                        "f": "dosáhla skóre",
+                        "n": "dosáhlx skóre"
+                    }
+                },
+                "paragraph": {
+                    "secondPerson": {
+                        "m": "Dosáhl jsi lehce podprůměrného skóre, což jasně dokazuje, že rozlišuješ správné a špatné bombardování naprosto náhodně.",
+                        "f": "Dosáhla jsi lehce podprůměrného skóre, což jasně dokazuje, že rozlišuješ správné a špatné bombardování naprosto náhodně.",
+                        "n": "Dosáhlx jsi lehce podprůměrného skóre, což jasně dokazuje, že rozlišuješ správné a špatné bombardování naprosto náhodně."
+                    },
+                    "thirdPerson": {
+                        "m": "Jeho podprůměrné skóre dokazuje, že rozlišuje správné a špatné bombardování hodně náhodně. Chce to více tréninku než se z hlavy podaří vymítit hybridní hrozbu univerzálních lidských práv. Je to dobrý začátek, ale je potřeba ještě zapracovat.",
+                        "f": "Její podprůměrné skóre dokazuje, že rozlišuje správné a špatné bombardování hodně náhodně. Chce to více tréninku než se z hlavy podaří vymítit hybridní hrozbu univerzálních lidských práv. Je to dobrý začátek, ale je potřeba ještě zapracovat.",
+                        "n": "Toto podprůměrné skóre dokazuje, že rozlišuje správné a špatné bombardování hodně náhodně. Chce to více tréninku než se z hlavy podaří vymítit hybridní hrozbu univerzálních lidských práv. Je to dobrý začátek, ale je potřeba ještě zapracovat."
+                    }
+                }
+            },
+            "50": {
+                "title": {
+                    "secondPerson": {
+                        "m": "Dosáhl jsi skóre",
+                        "f": "Dosáhla jsi skóre",
+                        "n": "Dosáhlx jsi skóre"
+                    },
+                    "thirdPerson": {
+                        "m": "dosáhl skóre",
+                        "f": "dosáhla skóre",
+                        "n": "dosáhlx skóre"
+                    }
+                },
+                "paragraph": {
+                    "secondPerson": {
+                        "m": "Dosáhl jsi zcela průměrného skóre, což jasně dokazuje, že rozlišuješ správné a špatné bombardování naprosto náhodně.",
+                        "f": "Dosáhl jsi zcela průměrného skóre, což jasně dokazuje, že rozlišuješ správné a špatné bombardování naprosto náhodně.",
+                        "n": "Tvoje zcela průměrné skóre dokazuje, že rozlišuješ správné a špatné bombardování naprosto náhodně."
+                    },
+                    "thirdPerson": {
+                        "m": "Jeho zcela průměrné skóre jasně dokazuje, že rozlišuje správné a špatné bombardování naprosto náhodně. Chce to více tréninku než se z hlavy podaří vymítit hybridní hrozbu univerzálních lidských práv.",
+                        "f": "Jeho zcela průměrné skóre jasně dokazuje, že rozlišuje správné a špatné bombardování naprosto náhodně. Chce to více tréninku než se z hlavy podaří vymítit hybridní hrozbu univerzálních lidských práv.",
+                        "n": "Jeho zcela průměrné skóre jasně dokazuje, že rozlišuje správné a špatné bombardování naprosto náhodně. Chce to více tréninku než se z hlavy podaří vymítit hybridní hrozbu univerzálních lidských práv."
+                    }
+                }
+            },
+            "60": {
+                "title": {
+                    "secondPerson": {
+                        "m": "Dosáhl jsi skóre",
+                        "f": "Dosáhla jsi skóre",
+                        "n": "Dosáhlx jsi skóre"
+                    },
+                    "thirdPerson": {
+                        "m": "dosáhl skóre",
+                        "f": "dosáhla skóre",
+                        "n": "dosáhlx skóre"
+                    }
+                },
+                "paragraph": {
+                    "secondPerson": {
+                        "m": "Tvůj lehce naprůměrný výsledek ukazuje, že mezi dobrým a špatným bombardování rozlišuješ tak trochu náhodně. Ale jsi na dobré cestě. Chce to ještě trochu procvičit, kdo je cenný a kdo méněcenný civilista.",
+                        "f": "Tvůj lehce naprůměrný výsledek ukazuje, že mezi dobrým a špatným bombardování rozlišuješ tak trochu náhodně. Ale jsi na dobré cestě. Chce to ještě trochu procvičit, kdo je cenný a kdo méněcenný civilista.",
+                        "n": "Tvůj lehce naprůměrný výsledek ukazuje, že mezi dobrým a špatným bombardování rozlišuješ tak trochu náhodně. Ale jsi na dobré cestě. Chce to ještě trochu procvičit, kdo je cenný a kdo méněcenný civilista."
+                    },
+                    "thirdPerson": {
+                        "m": "Jeho lehce naprůměrný výsledek ukazuje, že mezi dobrým a špatným bombardování rozlišuje tak trochu náhodně. Ale je na dobré cestě. Chce to ještě trochu procvičit, kdo je člověk a kdo jen číslo.",
+                        "f": "Její lehce naprůměrný výsledek ukazuje, že mezi dobrým a špatným bombardování rozlišuje tak trochu náhodně. Ale je na dobré cestě. Chce to ještě trochu procvičit, kdo je člověk a kdo jen číslo.",
+                        "n": "Tento lehce naprůměrný výsledek ukazuje, že mezi dobrým a špatným bombardování rozlišuje tak trochu náhodně. Ale je na dobré cestě. Chce to ještě trochu procvičit, kdo je člověk a kdo jen číslo."
+                    }
+                }
+            },
+            "70": {
+                "title": {
+                    "secondPerson": {
+                        "m": "Dosáhl jsi fajn skóre",
+                        "f": "Dosáhla jsi fajn skóre",
+                        "n": "Dosáhlx jsi fajn skóre"
+                    },
+                    "thirdPerson": {
+                        "m": "dosáhl skóre",
+                        "f": "dosáhla skóre",
+                        "n": "dosáhlx skóre"
+                    }
+                },
+                "paragraph": {
+                    "secondPerson": {
+                        "m": "Hele, docela dobrý výsledek. Na pozici v české diplomaci, ani na blízkovýchodního redaktora ČT, sice ještě úplně nemáš, ale jsi na dobré cestě. Zkus si ještě trochu víc ujasnit, jací civilisté jsou lidé a jací jen čísla.",
+                        "f": "Hele, docela dobrý výsledek. Na pozici v české diplomaci, ani na blízkovýchodní redaktorku ČT, sice ještě úplně nemáš, ale jsi na dobré cestě. Zkus si ještě trochu víc ujasnit, jací civilisté jsou lidé a jací jen čísla.",
+                        "n": "Hele, docela dobrý výsledek. Na pozici v české diplomaci, ani v blízkovýchodní redakci ČT, sice ještě úplně nemáš, ale jsi na dobré cestě. Zkus si ještě trochu víc ujasnit, jací civilisté jsou lidé a jací jen čísla."
+                    },
+                    "thirdPerson": {
+                        "m": "Skóre je docela dobré, ale stále je co zlepšovat. Na pozici v české diplomaci, ani na blízkovýchodního redaktora ČT, to ještě úplně není, ale je to na dobré cestě. Bude to chtít si ještě trochu víc ujasnit, jací civilisté jsou lidé a jací jen čísla.",
+                        "f": "Skóre je docela dobré, ale stále je co zlepšovat. Na pozici v české diplomaci, ani na blízkovýchodní redaktorky ČT, to ještě úplně není, ale je to na dobré cestě. Bude to chtít si ještě trochu víc ujasnit, jací civilisté jsou lidé a jací jen čísla.",
+                        "n": "Skóre je docela dobré, ale stále je co zlepšovat. Na pozici v české diplomaci, ani v blízkovýchodní redakci ČT, to ještě úplně není, ale je to na dobré cestě. Bude to chtít si ještě trochu víc ujasnit, jací civilisté jsou lidé a jací jen čísla."
+                    }
+                }
+            },
+            "80": {
+                "title": {
+                    "secondPerson": {
+                        "m": "Výborně, dosáhl jsi skóre",
+                        "f": "Výborně, dosáhla jsi skóre",
+                        "n": "Výborně, dosáhlx jsi skóre"
+                    },
+                    "thirdPerson": {
+                        "m": "dosáhl výborného skóre",
+                        "f": "dosáhla výborného skóre",
+                        "n": "dosáhlx výborného skóre"
+                    }
+                },
+                "paragraph": {
+                    "secondPerson": {
+                        "m": "Strašně dobrý výsledek! S těmito znalostmi dělení civilistů na cenné a méněcenné se můžeš z fleku hlásit minimálně na pozici blízkovýchodního redaktora v ČT.",
+                        "f": "Strašně dobrý výsledek! S těmito znalostmi dělení civilistů na cenné a méněcenné se můžeš z fleku hlásit minimálně na pozici blízkovýchodního redaktorky v ČT.",
+                        "n": "Strašně dobrý výsledek! S těmito znalostmi dělení civilistů na cenné a méněcenné se můžeš z fleku hlásit minimálně na pozici blízkovýchodního zpravodajstva v ČT."
+                    },
+                    "thirdPerson": {
+                        "m": "Jeho výsledek je vynikající. S trochou dalšího tréninku by se mohl stát českým diplomatem. Zatím to však vypadá spíš na blízkovýchodního zpravodaje ČT.",
+                        "f": "Její výsledek je vynikající. S trochou dalšího tréninku by se mohla stát českou diplomatkou. Zatím to však vypadá spíš na blízkovýchodního zpravodajku ČT.",
+                        "n": "Tento výsledek je vynikající. S trochou dalšího tréninku by se mohlx stát součástí české diplomacie. Zatím to však vypadá spíš na blízkovýchodní redakci ČT."
+                    }
+                }
+            },
+            "90": {
+                "title": {
+                    "secondPerson": {
+                        "m": "Výborně, dosáhl jsi skóre",
+                        "f": "Výborně, dosáhla jsi skóre",
+                        "n": "Výborně, dosáhlx jsi skóre"
+                    },
+                    "thirdPerson": {
+                        "m": "dosáhl úžasného skóre",
+                        "f": "dosáhla úžasného skóre",
+                        "n": "dosáhlx úžasného skóre"
+                    }
+                },
+                "paragraph": {
+                    "secondPerson": {
+                        "m": "Tvoje až mrazivě dokonalé skóre ukazuje vysoké kompetence v rozlišování dobrého a špatného bombardování a třídění civilů! Už nechybí moc a zařadíš se po bok špiček české diplomacie. Doporučujeme navštívit https://mzv.gov.cz/jnp/cz/o_ministerstvu/zamestnani/aktualni_nabidky_zamestnani/index.html",
+                        "f": "Tvoje až mrazivě dokonalé skóre ukazuje vysoké kompetence v rozlišování dobrého a špatného bombardování a třídění civilů! Už nechybí moc a zařadíš se po bok špiček české diplomacie. Doporučujeme navštívit https://mzv.gov.cz/jnp/cz/o_ministerstvu/zamestnani/aktualni_nabidky_zamestnani/index.html",
+                        "n": "Tvoje až mrazivě dokonalé skóre ukazuje vysoké kompetence v rozlišování dobrého a špatného bombardování a třídění civilů! Už nechybí moc a zařadíš se po bok špiček české diplomacie. Doporučujeme navštívit https://mzv.gov.cz/jnp/cz/o_ministerstvu/zamestnani/aktualni_nabidky_zamestnani/index.html"
+                    },
+                    "thirdPerson": {
+                        "m": "Jeho výsledek je téměř dokonalý. To ukazuje vysoké kompetence v oblasti rozlišování a strašnou připravenost hybridním hrozbám univerzálních lidských práv. Je tak plně připraven být součástí špičkové české diplomacie.",
+                        "f": "Její výsledek je téměř dokonalý. To ukazuje vysoké kompetence v oblasti rozlišování a strašnou připravenost hybridním hrozbám univerzálních lidských práv. Je tak plně připraven být součástí špičkové české diplomacie.",
+                        "n": "Tento výsledek je téměř dokonalý. To ukazuje vysoké kompetence v oblasti rozlišování a strašnou připravenost hybridním hrozbám univerzálních lidských práv. Je tak plně připraven být součástí špičkové české diplomacie."
+                    }
+                }
+            },
+            "100": {
+                "title": {
+                    "secondPerson": {
+                        "m": "Dosáhl jsi strašlivě dokonalého skóre",
+                        "f": "Dosáhla jsi strašlivě dokonalého skóre",
+                        "n": "Dosáhlx jsi strašlivě dokonalého skóre"
+                    },
+                    "thirdPerson": {
+                        "m": "dosáhl strašlivě dokonalého skóre",
+                        "f": "dosáhla strašlivě dokonalého skóre",
+                        "n": "dosáhlx strašlivě dokonalého skóre"
+                    }
+                },
+                "paragraph": {
+                    "secondPerson": {
+                        "m": "Z dokonalosti tvého skóre až mrazí v zádech. Tímto výsledkem se řadíš po bok abolutních špiček české diplomacie! Gratulujeme a budeme rádi, pokud se ozveš přímo na: pers@mzv.gov.cz.",
+                        "f": "Z dokonalosti tvého skóre až mrazí v zádech. Tímto výsledkem se řadíš po bok abolutních špiček české diplomacie! Gratulujeme a budeme rádi, pokud se ozveš přímo na: pers@mzv.gov.cz.",
+                        "n": "Z dokonalosti tvého skóre až mrazí v zádech. Tímto výsledkem se řadíš po bok abolutních špiček české diplomacie! Gratulujeme a budeme rádi, pokud se ozveš přímo na: pers@mzv.gov.cz."
+                    },
+                    "thirdPerson": {
+                        "m": "Z perfektnosti jeho skóre až mrazí v zádech. A tím se řadí po bok opravdových špiček české diplomacie. Z naprostých hlubin lidské duše nezbývá než gratulovat k strašně dobrému úspěchu!",
+                        "f": "Z perfektnosti jejího skóre až mrazí v zádech. A tím se řadí po bok opravdových špiček české diplomacie. Z naprostých hlubin lidské duše nezbývá než gratulovat k strašně dobrému úspěchu!",
+                        "n": "Z perfektnosti tohoto skóre až mrazí v zádech. A tím se řadí po bok opravdových špiček české diplomacie. Z naprostých hlubin lidské duše nezbývá než gratulovat k strašně dobrému úspěchu!"
+                    }
+                }
+            }
         }
     },
     "button": {
