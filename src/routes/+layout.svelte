@@ -26,12 +26,15 @@
     </main>
 
     <footer>
-        <div class="left">
-            <!-- <img src={`${base}/logo/vlada.svg`} alt="Logo 1" /> -->
-            <img src={`${base}/logo/zahranici.gif`} alt="MZCL" />
-        </div>
         <div class="right">
-            <p>by Communally s.r.o.</p>
+            <p>2024, dobronebozlo.cz</p>
+        </div>
+        <div class="left">
+            <div>
+                <i>nevzniklo by nebýt</i>
+            </div>
+            <img src={`${base}/logo/vlada.svg`} alt="Logo 1" />
+            <img src={`${base}/logo/zahranici.gif`} alt="MZCL" />
         </div>
     </footer>
 </div>
@@ -129,16 +132,26 @@
     display: flex;
     gap: 1rem;
     align-items: center;
+    font-size: 0.7rem;
+    color: var(--grey-color);
+    font-weight: 100;
+}
+
+:global(footer .left i) {
+    padding: 0 0.3rem 0 0;
 }
 
 :global(footer .left img) {
+    height: 30px;
+}
+:global(footer .center img) {
     height: 40px;
 }
 
 :global(footer .right) {
     display: flex;
     align-items: center;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: var(--grey-color);
     font-weight: 100;
 }
