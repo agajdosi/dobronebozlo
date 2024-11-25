@@ -258,4 +258,13 @@ input, select {
 .enter {
     margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+  .image-button{
+    width: 43vw;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+}
 </style>

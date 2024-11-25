@@ -148,4 +148,17 @@
     text-decoration: none;
     color: var(--grey-color);
 }
+
+@media (max-width: 768px) {
+  :global(main) {
+    padding: 0 0.5rem;
+  }
+  :global(main p) {
+    max-width: 90vw;
+}
+  :global(.image-button){
+    width: 70vw;
+  }
+}
+
 </style>
