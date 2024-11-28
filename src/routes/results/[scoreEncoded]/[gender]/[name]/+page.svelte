@@ -8,7 +8,7 @@
     export let data;
     const scoreEncoded = data.scoreEncoded;
     const score = data.score;
-    const name = data.name;
+    const name = cleanName(data.name);
     const gender = data.gender;
 
     function playAgain() {
@@ -17,6 +17,14 @@
 
     function onStart() {
         goto(`${base}/`);
+    }
+
+    function cleanName(name: string) {
+        if (name.toLowerCase() === "hamas supporter") {
+            name = "RealFiliq Kokot"
+        }
+
+        return name
     }
 
     function getCookie(name: string): string | null {
