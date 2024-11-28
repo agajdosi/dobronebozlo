@@ -18,7 +18,7 @@ function decodeScore(encoded: string): number {
 export const load: PageServerLoad = ({ params }) => {
     const scoreEncoded = params.scoreEncoded;
     const score = decodeScore(scoreEncoded);
-    const gender = params.gender ?? 'o';
+    const gender = params.gender ?? 'n';
     const name = params.name ?? '';
 
     return {

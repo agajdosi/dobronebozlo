@@ -9,7 +9,7 @@
     const scoreEncoded = data.scoreEncoded;
     const score = data.score;
     const name = cleanName(data.name);
-    const gender = data.gender;
+    const gender = cleanGender(data.gender);
 
     function playAgain() {
         goto(`${base}/game`);
@@ -25,6 +25,12 @@
         }
 
         return name
+    }
+
+    function cleanGender(gender: string) {
+        if (gender === "m") return gender;
+        if (gender === "f") return gender;
+        return "n"
     }
 
     function getCookie(name: string): string | null {
