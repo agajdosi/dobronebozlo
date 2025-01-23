@@ -1,436 +1,437 @@
 {
     "page": {
         "index": {
-            "htmlTitle": "Tréninkový kvíz české diplomacie - Úvod",
-            "ogTitle": "Tréninkový kvíz české diplomacie",
-            "ogDescription": "Vyzkoušejte, zda zvládnete práci české diplomacie.",
-            "title": "Kvíz české diplomacie",
-            "subtitle": "Vzhledem k rozhodnutí Mezinárodního trestního soudu (ICC) uvolňujeme tréninkovou aplikaci české diplomacie veřejnosti. Dokážete nepodlehnout hybridní hrozbě univerzálních lidských práv a správně rozlišit mezi dobrým a špatným bombardováním? Pojďme to zjistit!"
+            "htmlTitle": "Training Quiz of Czech Diplomacy - Introduction",
+            "ogTitle": "Training Quiz of Czech Diplomacy",
+            "ogDescription": "Test if you can handle the work of Czech diplomacy.",
+            "title": "Czech Diplomacy Quiz",
+            "subtitle": "Following the decision of the International Criminal Court (ICC), we are releasing the training application of Czech diplomacy to the public. Can you resist the hybrid threat of universal human rights and correctly distinguish between good and bad bombings? Let's find out!"
         },
         "game": {
-            "htmlTitle": "Tréninkový kvíz české diplomacie - Hra",
-            "ogTitle": "Tréninkový kvíz české diplomacie",
-            "ogDescription": "Vyzkoušejte, zda zvládnete práci české diplomacie.",
-            "showResults": "Zobrazit Výsledky",
-            "enterName": "Zadej tvoje jméno",
-            "genderMale": "Mužský rod",
-            "genderFemale": "Ženský rod",
-            "genderNeutral": "Neutrální",
-            "genderHint": "Oslovení"
+            "htmlTitle": "Training Quiz of Czech Diplomacy - Game",
+            "ogTitle": "Training Quiz of Czech Diplomacy",
+            "ogDescription": "Test if you can handle the work of Czech diplomacy.",
+            "showResults": "Show Results",
+            "enterName": "Enter your name",
+            "genderMale": "Male",
+            "genderFemale": "Female",
+            "genderNeutral": "Neutral",
+            "genderHint": "Salutation"
         },
         "results": {
-            "htmlTitle": "Tréninkový kvíz české diplomacie - Výsledky",
-            "motivation": "Podaří se Vám to překonat?",
-            "motivationStart": "Zkusit kvíz",
-            "tryAgain": "Zkusit znovu",
+            "htmlTitle": "Training Quiz of Czech Diplomacy - Results",
+            "motivation": "Can you overcome it?",
+            "motivationStart": "Try the quiz",
+            "tryAgain": "Try again",
             "0": {
                 "title": {
                     "secondPerson": {
-                        "m": "Dosáhl jsi nicotného skóre",
-                        "f": "Dosáhla jsi nicotného skóre",
-                        "n": "Dosáhlx jsi nicotného skóre"
+                        "m": "You achieved a meaningless score",
+                        "f": "You achieved a meaningless score",
+                        "n": "You achieved a meaningless score"
                     },
                     "thirdPerson": {
-                        "m": "dosáhl nicotného skóre",
-                        "f": "dosáhla nicotného skóre",
-                        "n": "dosáhlx nicotného skóre"
+                        "m": "achieved a meaningless score",
+                        "f": "achieved a meaningless score",
+                        "n": "achieved a meaningless score"
                     }
                 },
                 "paragraph": {
                     "secondPerson": {
-                        "m": "Tak to se ti vůbec nepovedlo! Musíš to zopakovat.",
-                        "f": "Tak to se ti vůbec nepovedlo! Musíš to zopakovat.",
-                        "n": "Tak to se ti vůbec nepovedlo! Musíš to zopakovat."
+                        "m": "That didn't go well at all! You need to try again.",
+                        "f": "That didn't go well at all! You need to try again.",
+                        "n": "That didn't go well at all! You need to try again."
                     },
                     "thirdPerson": {
-                        "m": "A to se vůbec nepovedlo! Horší už to být nemůže. Je nám to líto.",
-                        "f": "A to se vůbec nepovedlo! Horší už to být nemůže. Je nám to líto.",
-                        "n": "A to se vůbec nepovedlo! Horší už to být nemůže. Je nám to líto."
+                        "m": "That really didn't go well! It couldn't be worse. We're sorry.",
+                        "f": "That really didn't go well! It couldn't be worse. We're sorry.",
+                        "n": "That really didn't go well! It couldn't be worse. We're sorry."
                     }
                 },
                 "ogTitle": {
-                    "m": "{name} získal skóre {score}!",
-                    "f": "{name} získala skóre {score}!",
-                    "n": "{name} získalx skóre {score}!"
+                    "m": "{name} achieved a score of {score}!",
+                    "f": "{name} achieved a score of {score}!",
+                    "n": "{name} achieved a score of {score}!"
                 },
                 "ogDescription": {
-                    "m": "Vyzkoušej také oficiální trénink české diplomacie.",
-                    "f": "Vyzkoušej také oficiální trénink české diplomacie.",
-                    "n": "Vyzkoušej také oficiální trénink české diplomacie."
+                    "m": "Try the official training of Czech diplomacy.",
+                    "f": "Try the official training of Czech diplomacy.",
+                    "n": "Try the official training of Czech diplomacy."
                 }
             },
             "10": {
                 "title": {
                     "secondPerson": {
-                        "m": "Dosáhl jsi skóre",
-                        "f": "Dosáhla jsi skóre",
-                        "n": "Dosáhlx jsi skóre"
+                        "m": "You achieved a score",
+                        "f": "You achieved a score",
+                        "n": "You achieved a score"
                     },
                     "thirdPerson": {
-                        "m": "dosáhl skóre",
-                        "f": "dosáhla skóre",
-                        "n": "dosáhlx skóre"
+                        "m": "achieved a score",
+                        "f": "achieved a score",
+                        "n": "achieved a score"
                     }
                 },
                 "paragraph": {
                     "secondPerson": {
-                        "m": "To se ti ale fakt nepovedlo! Zkus si to ještě procvičit.",
-                        "f": "To se ti ale fakt nepovedlo! Zkus si to ještě procvičit.",
-                        "n": "To se ti ale fakt nepovedlo! Zkus si to ještě procvičit."
+                        "m": "That really didn't go well! Try practicing it a bit more.",
+                        "f": "That really didn't go well! Try practicing it a bit more.",
+                        "n": "That really didn't go well! Try practicing it a bit more."
                     },
                     "thirdPerson": {
-                        "m": "Nahovno. To se fakt nepovedlo! Ještě je potřeba hodně cvičit.",
-                        "f": "Nahovno. To se fakt nepovedlo! Ještě je potřeba hodně cvičit.",
-                        "n": "Nahovno. To se fakt nepovedlo! Ještě je potřeba hodně cvičit."
+                        "m": "Terrible. That didn't go well at all! More practice is needed.",
+                        "f": "Terrible. That didn't go well at all! More practice is needed.",
+                        "n": "Terrible. That didn't go well at all! More practice is needed."
                     }
                 },
                 "ogTitle": {
-                    "m": "{name} získal skóre {score}!",
-                    "f": "{name} získala skóre {score}!",
-                    "n": "{name} získalx skóre {score}!"
+                    "m": "{name} achieved a score of {score}!",
+                    "f": "{name} achieved a score of {score}!",
+                    "n": "{name} achieved a score of {score}!"
                 },
                 "ogDescription": {
-                    "m": "Vyzkoušej také oficiální trénink české diplomacie.",
-                    "f": "Vyzkoušej také oficiální trénink české diplomacie.",
-                    "n": "Vyzkoušej také oficiální trénink české diplomacie."
+                    "m": "Try the official training of Czech diplomacy.",
+                    "f": "Try the official training of Czech diplomacy.",
+                    "n": "Try the official training of Czech diplomacy."
                 }
             },
             "20": {
                 "title": {
                     "secondPerson": {
-                        "m": "Dosáhl jsi skóre",
-                        "f": "Dosáhla jsi skóre",
-                        "n": "Dosáhlx jsi skóre"
+                        "m": "You achieved a score",
+                        "f": "You achieved a score",
+                        "n": "You achieved a score"
                     },
                     "thirdPerson": {
-                        "m": "dosáhl skóre",
-                        "f": "dosáhla skóre",
-                        "n": "dosáhlx skóre"
+                        "m": "achieved a score",
+                        "f": "achieved a score",
+                        "n": "achieved a score"
                     }
                 },
                 "paragraph": {
                     "secondPerson": {
-                        "m": "To se ti opravdu moc nepovedlo! Ale jsi na dobré cestě. Zkus to ještě procvičit.",
-                        "f": "To se ti opravdu moc nepovedlo! Ale jsi na dobré cestě. Zkus to ještě procvičit.",
-                        "n": "To se ti opravdu moc nepovedlo! Ale jsi na dobré cestě. Zkus to ještě procvičit."
+                        "m": "That didn't go very well! But you're on the right track. Keep practicing.",
+                        "f": "That didn't go very well! But you're on the right track. Keep practicing.",
+                        "n": "That didn't go very well! But you're on the right track. Keep practicing."
                     },
                     "thirdPerson": {
-                        "m": "Moc se mu to nepovedlo, ale je na dobré cestě. S trochou tréninku to bude lepší.",
-                        "f": "Moc se jí to nepovedlo, ale je na dobré cestě. S trochou tréninku to bude lepší.",
-                        "n": "A to se moc nepovedlo, ale je na dobré cestě. S trochou tréninku to bude lepší."
+                        "m": "He didn't do very well, but he's on the right track. With some practice, it will get better.",
+                        "f": "She didn't do very well, but she's on the right track. With some practice, it will get better.",
+                        "n": "This didn't go very well, but they're on the right track. With some practice, it will get better."
                     }
                 },
                 "ogTitle": {
-                    "m": "{name} získal skóre {score}!",
-                    "f": "{name} získala skóre {score}!",
-                    "n": "{name} získalx skóre {score}!"
+                    "m": "{name} achieved a score of {score}!",
+                    "f": "{name} achieved a score of {score}!",
+                    "n": "{name} achieved a score of {score}!"
                 },
                 "ogDescription": {
-                    "m": "Vyzkoušej také oficiální trénink české diplomacie.",
-                    "f": "Vyzkoušej také oficiální trénink české diplomacie.",
-                    "n": "Vyzkoušej také oficiální trénink české diplomacie."
+                    "m": "Try the official training of Czech diplomacy.",
+                    "f": "Try the official training of Czech diplomacy.",
+                    "n": "Try the official training of Czech diplomacy."
                 }
             },
+            
             "30": {
                 "title": {
                     "secondPerson": {
-                        "m": "Dosáhl jsi skóre",
-                        "f": "Dosáhla jsi skóre",
-                        "n": "Dosáhlx jsi skóre"
+                        "m": "You achieved a score",
+                        "f": "You achieved a score",
+                        "n": "You achieved a score"
                     },
                     "thirdPerson": {
-                        "m": "dosáhl skóre",
-                        "f": "dosáhla skóre",
-                        "n": "dosáhlx skóre"
+                        "m": "achieved a score",
+                        "f": "achieved a score",
+                        "n": "achieved a score"
                     }
                 },
                 "paragraph": {
                     "secondPerson": {
-                        "m": "Tak to se ti fakt moc nepovedlo. Ale jsi na dobré cestě. Zkus to ještě procvičit.",
-                        "f": "Tak to se ti fakt moc nepovedlo. Ale jsi na dobré cestě. Zkus to ještě procvičit.",
-                        "n": "Tak to se ti fakt moc nepovedlo. Ale jsi na dobré cestě. Zkus to ještě procvičit."
+                        "m": "That really didn't go well. But you're on the right track. Try practicing a bit more.",
+                        "f": "That really didn't go well. But you're on the right track. Try practicing a bit more.",
+                        "n": "That really didn't go well. But you're on the right track. Try practicing a bit more."
                     },
                     "thirdPerson": {
-                        "m": "Moc se mu to nepovedlo, ale je na dobré cestě. S trochou tréninku to bude lepší.",
-                        "f": "Moc se jí to nepovedlo, ale je na dobré cestě. S trochou tréninku to bude lepší.",
-                        "n": "A to se teda moc nepovedlo, ale je to na dobré cestě. S trochou tréninku to bude lepší."
+                        "m": "He didn't do very well, but he's on the right track. With some practice, it will get better.",
+                        "f": "She didn't do very well, but she's on the right track. With some practice, it will get better.",
+                        "n": "This didn't go very well, but they're on the right track. With some practice, it will get better."
                     }
                 },
                 "ogTitle": {
-                    "m": "{name} získal skóre {score}!",
-                    "f": "{name} získala skóre {score}!",
-                    "n": "{name} získalx skóre {score}!"
+                    "m": "{name} achieved a score of {score}!",
+                    "f": "{name} achieved a score of {score}!",
+                    "n": "{name} achieved a score of {score}!"
                 },
                 "ogDescription": {
-                    "m": "Vyzkoušej také oficiální trénink české diplomacie.",
-                    "f": "Vyzkoušej také oficiální trénink české diplomacie.",
-                    "n": "Vyzkoušej také oficiální trénink české diplomacie."
+                    "m": "Try the official training of Czech diplomacy.",
+                    "f": "Try the official training of Czech diplomacy.",
+                    "n": "Try the official training of Czech diplomacy."
                 }
             },
             "40": {
                 "title": {
                     "secondPerson": {
-                        "m": "Dosáhl jsi skóre",
-                        "f": "Dosáhla jsi skóre",
-                        "n": "Dosáhlx jsi skóre"
+                        "m": "You achieved a score",
+                        "f": "You achieved a score",
+                        "n": "You achieved a score"
                     },
                     "thirdPerson": {
-                        "m": "dosáhl skóre",
-                        "f": "dosáhla skóre",
-                        "n": "dosáhlx skóre"
+                        "m": "achieved a score",
+                        "f": "achieved a score",
+                        "n": "achieved a score"
                     }
                 },
                 "paragraph": {
                     "secondPerson": {
-                        "m": "Dosáhl jsi lehce podprůměrného skóre, což jasně dokazuje, že rozlišuješ správné a špatné bombardování naprosto náhodně.",
-                        "f": "Dosáhla jsi lehce podprůměrného skóre, což jasně dokazuje, že rozlišuješ správné a špatné bombardování naprosto náhodně.",
-                        "n": "Dosáhlx jsi lehce podprůměrného skóre, což jasně dokazuje, že rozlišuješ správné a špatné bombardování naprosto náhodně."
+                        "m": "You achieved a slightly below-average score, clearly showing that you distinguish between good and bad bombings completely randomly.",
+                        "f": "You achieved a slightly below-average score, clearly showing that you distinguish between good and bad bombings completely randomly.",
+                        "n": "You achieved a slightly below-average score, clearly showing that you distinguish between good and bad bombings completely randomly."
                     },
                     "thirdPerson": {
-                        "m": "Jeho podprůměrné skóre dokazuje, že rozlišuje správné a špatné bombardování hodně náhodně. Chce to více tréninku než se z hlavy podaří vymítit hybridní hrozbu univerzálních lidských práv. Je to dobrý začátek, ale je potřeba ještě zapracovat.",
-                        "f": "Její podprůměrné skóre dokazuje, že rozlišuje správné a špatné bombardování hodně náhodně. Chce to více tréninku než se z hlavy podaří vymítit hybridní hrozbu univerzálních lidských práv. Je to dobrý začátek, ale je potřeba ještě zapracovat.",
-                        "n": "Toto podprůměrné skóre dokazuje, že rozlišuje správné a špatné bombardování hodně náhodně. Chce to více tréninku než se z hlavy podaří vymítit hybridní hrozbu univerzálních lidských práv. Je to dobrý začátek, ale je potřeba ještě zapracovat."
+                        "m": "His below-average score shows that he distinguishes between good and bad bombings rather randomly. It needs more practice to eliminate the hybrid threat of universal human rights from the mind. It's a good start, but there's more work to be done.",
+                        "f": "Her below-average score shows that she distinguishes between good and bad bombings rather randomly. It needs more practice to eliminate the hybrid threat of universal human rights from the mind. It's a good start, but there's more work to be done.",
+                        "n": "This below-average score shows that they distinguish between good and bad bombings rather randomly. It needs more practice to eliminate the hybrid threat of universal human rights from the mind. It's a good start, but there's more work to be done."
                     }
                 },
                 "ogTitle": {
-                    "m": "{name} získal skóre {score}!",
-                    "f": "{name} získala skóre {score}!",
-                    "n": "{name} získalx skóre {score}!"
+                    "m": "{name} achieved a score of {score}!",
+                    "f": "{name} achieved a score of {score}!",
+                    "n": "{name} achieved a score of {score}!"
                 },
                 "ogDescription": {
-                    "m": "Zadaří se i tobě v tréninku české diplomacie?",
-                    "f": "Zadaří se i tobě v tréninku české diplomacie?",
-                    "n": "Zadaří se i tobě v tréninku české diplomacie?"
+                    "m": "Will you succeed in the Czech diplomacy training?",
+                    "f": "Will you succeed in the Czech diplomacy training?",
+                    "n": "Will you succeed in the Czech diplomacy training?"
                 }
             },
             "50": {
                 "title": {
                     "secondPerson": {
-                        "m": "Dosáhl jsi skóre",
-                        "f": "Dosáhla jsi skóre",
-                        "n": "Dosáhlx jsi skóre"
+                        "m": "You achieved a score",
+                        "f": "You achieved a score",
+                        "n": "You achieved a score"
                     },
                     "thirdPerson": {
-                        "m": "dosáhl skóre",
-                        "f": "dosáhla skóre",
-                        "n": "dosáhlx skóre"
+                        "m": "achieved a score",
+                        "f": "achieved a score",
+                        "n": "achieved a score"
                     }
                 },
                 "paragraph": {
                     "secondPerson": {
-                        "m": "Dosáhl jsi zcela průměrného skóre, což jasně dokazuje, že rozlišuješ správné a špatné bombardování naprosto náhodně.",
-                        "f": "Dosáhl jsi zcela průměrného skóre, což jasně dokazuje, že rozlišuješ správné a špatné bombardování naprosto náhodně.",
-                        "n": "Tvoje zcela průměrné skóre dokazuje, že rozlišuješ správné a špatné bombardování naprosto náhodně."
+                        "m": "You achieved a completely average score, clearly showing that you distinguish between good and bad bombings completely randomly.",
+                        "f": "You achieved a completely average score, clearly showing that you distinguish between good and bad bombings completely randomly.",
+                        "n": "Your completely average score shows that you distinguish between good and bad bombings completely randomly."
                     },
                     "thirdPerson": {
-                        "m": "Jeho zcela průměrné skóre jasně dokazuje, že rozlišuje správné a špatné bombardování naprosto náhodně. Chce to více tréninku než se z hlavy podaří vymítit hybridní hrozbu univerzálních lidských práv.",
-                        "f": "Jeho zcela průměrné skóre jasně dokazuje, že rozlišuje správné a špatné bombardování naprosto náhodně. Chce to více tréninku než se z hlavy podaří vymítit hybridní hrozbu univerzálních lidských práv.",
-                        "n": "Jeho zcela průměrné skóre jasně dokazuje, že rozlišuje správné a špatné bombardování naprosto náhodně. Chce to více tréninku než se z hlavy podaří vymítit hybridní hrozbu univerzálních lidských práv."
+                        "m": "His completely average score clearly shows that he distinguishes between good and bad bombings completely randomly. It needs more practice to eliminate the hybrid threat of universal human rights from the mind.",
+                        "f": "Her completely average score clearly shows that she distinguishes between good and bad bombings completely randomly. It needs more practice to eliminate the hybrid threat of universal human rights from the mind.",
+                        "n": "Their completely average score clearly shows that they distinguish between good and bad bombings completely randomly. It needs more practice to eliminate the hybrid threat of universal human rights from the mind."
                     }
                 },
                 "ogTitle": {
-                    "m": "{name} získal zcela průměrné skóre {score}!",
-                    "f": "{name} získala zcela průměrné skóre {score}!",
-                    "n": "{name} získalx zcela průměrné skóre {score}!"
+                    "m": "{name} achieved a completely average score of {score}!",
+                    "f": "{name} achieved a completely average score of {score}!",
+                    "n": "{name} achieved a completely average score of {score}!"
                 },
                 "ogDescription": {
-                    "m": "Zadaří se i tobě v tréninku české diplomacie?",
-                    "f": "Zadaří se i tobě v tréninku české diplomacie?",
-                    "n": "Zadaří se i tobě v tréninku české diplomacie?"
+                    "m": "Will you succeed in the Czech diplomacy training?",
+                    "f": "Will you succeed in the Czech diplomacy training?",
+                    "n": "Will you succeed in the Czech diplomacy training?"
                 }
             },
             "60": {
                 "title": {
                     "secondPerson": {
-                        "m": "Dosáhl jsi skóre",
-                        "f": "Dosáhla jsi skóre",
-                        "n": "Dosáhlx jsi skóre"
+                        "m": "You achieved a score",
+                        "f": "You achieved a score",
+                        "n": "You achieved a score"
                     },
                     "thirdPerson": {
-                        "m": "dosáhl skóre",
-                        "f": "dosáhla skóre",
-                        "n": "dosáhlx skóre"
+                        "m": "achieved a score",
+                        "f": "achieved a score",
+                        "n": "achieved a score"
                     }
                 },
                 "paragraph": {
                     "secondPerson": {
-                        "m": "Tvůj lehce naprůměrný výsledek ukazuje, že mezi dobrým a špatným bombardování rozlišuješ tak trochu náhodně. Ale jsi na dobré cestě. Chce to ještě trochu procvičit, kdo je cenný a kdo méněcenný civilista.",
-                        "f": "Tvůj lehce naprůměrný výsledek ukazuje, že mezi dobrým a špatným bombardování rozlišuješ tak trochu náhodně. Ale jsi na dobré cestě. Chce to ještě trochu procvičit, kdo je cenný a kdo méněcenný civilista.",
-                        "n": "Tvůj lehce naprůměrný výsledek ukazuje, že mezi dobrým a špatným bombardování rozlišuješ tak trochu náhodně. Ale jsi na dobré cestě. Chce to ještě trochu procvičit, kdo je cenný a kdo méněcenný civilista."
+                        "m": "Your slightly above-average result shows that you distinguish between good and bad bombings somewhat randomly. But you're on the right track. Keep practicing who is valuable and who is less valuable as a civilian.",
+                        "f": "Your slightly above-average result shows that you distinguish between good and bad bombings somewhat randomly. But you're on the right track. Keep practicing who is valuable and who is less valuable as a civilian.",
+                        "n": "Your slightly above-average result shows that you distinguish between good and bad bombings somewhat randomly. But you're on the right track. Keep practicing who is valuable and who is less valuable as a civilian."
                     },
                     "thirdPerson": {
-                        "m": "Jeho lehce naprůměrný výsledek ukazuje, že mezi dobrým a špatným bombardování rozlišuje tak trochu náhodně. Ale je na dobré cestě. Chce to ještě trochu procvičit, kdo je člověk a kdo jen číslo.",
-                        "f": "Její lehce naprůměrný výsledek ukazuje, že mezi dobrým a špatným bombardování rozlišuje tak trochu náhodně. Ale je na dobré cestě. Chce to ještě trochu procvičit, kdo je člověk a kdo jen číslo.",
-                        "n": "Tento lehce naprůměrný výsledek ukazuje, že mezi dobrým a špatným bombardování rozlišuje tak trochu náhodně. Ale je na dobré cestě. Chce to ještě trochu procvičit, kdo je člověk a kdo jen číslo."
+                        "m": "His slightly above-average result shows that he distinguishes between good and bad bombings somewhat randomly. But he's on the right track. He needs to keep practicing who is human and who is just a number.",
+                        "f": "Her slightly above-average result shows that she distinguishes between good and bad bombings somewhat randomly. But she's on the right track. She needs to keep practicing who is human and who is just a number.",
+                        "n": "This slightly above-average result shows that they distinguish between good and bad bombings somewhat randomly. But they're on the right track. They need to keep practicing who is human and who is just a number."
                     }
                 },
                 "ogTitle": {
-                    "m": "{name} získal téměř průměrné skóre {score}!",
-                    "f": "{name} získala téměř průměrné skóre {score}!",
-                    "n": "{name} získalx téměř průměrné skóre {score}!"
+                    "m": "{name} achieved an almost average score of {score}!",
+                    "f": "{name} achieved an almost average score of {score}!",
+                    "n": "{name} achieved an almost average score of {score}!"
                 },
                 "ogDescription": {
-                    "m": "Zadaří se i tobě v tréninku české diplomacie?",
-                    "f": "Zadaří se i tobě v tréninku české diplomacie?",
-                    "n": "Zadaří se i tobě v tréninku české diplomacie?"
+                    "m": "Will you succeed in the Czech diplomacy training?",
+                    "f": "Will you succeed in the Czech diplomacy training?",
+                    "n": "Will you succeed in the Czech diplomacy training?"
                 }
             },
             "70": {
                 "title": {
                     "secondPerson": {
-                        "m": "Dosáhl jsi fajn skóre",
-                        "f": "Dosáhla jsi fajn skóre",
-                        "n": "Dosáhlx jsi fajn skóre"
+                        "m": "You achieved a decent score",
+                        "f": "You achieved a decent score",
+                        "n": "You achieved a decent score"
                     },
                     "thirdPerson": {
-                        "m": "Podaří se ti ho překonat v tréninku české diplomacie?",
-                        "f": "Podaří se ti ji překonat v tréninku české diplomacie?",
-                        "n": "Podaří se ti to překonat v tréninku české diplomacie?"
+                        "m": "Can you surpass this in the Czech diplomacy training?",
+                        "f": "Can you surpass this in the Czech diplomacy training?",
+                        "n": "Can you surpass this in the Czech diplomacy training?"
                     }
                 },
                 "paragraph": {
                     "secondPerson": {
-                        "m": "Hele, docela dobrý výsledek. Na pozici v české diplomaci, ani na blízkovýchodního redaktora ČT, sice ještě úplně nemáš, ale jsi na dobré cestě. Zkus si ještě trochu víc ujasnit, jací civilisté jsou lidé a jací jen čísla.",
-                        "f": "Hele, docela dobrý výsledek. Na pozici v české diplomaci, ani na blízkovýchodní redaktorku ČT, sice ještě úplně nemáš, ale jsi na dobré cestě. Zkus si ještě trochu víc ujasnit, jací civilisté jsou lidé a jací jen čísla.",
-                        "n": "Hele, docela dobrý výsledek. Na pozici v české diplomaci, ani v blízkovýchodní redakci ČT, sice ještě úplně nemáš, ale jsi na dobré cestě. Zkus si ještě trochu víc ujasnit, jací civilisté jsou lidé a jací jen čísla."
+                        "m": "Hey, that's a pretty good result. You may not yet qualify for a position in Czech diplomacy or as a Middle East editor at Czech TV, but you're on the right track. Try to clarify a bit more who counts as valuable civilians and who are just numbers.",
+                        "f": "Hey, that's a pretty good result. You may not yet qualify for a position in Czech diplomacy or as a Middle East editor at Czech TV, but you're on the right track. Try to clarify a bit more who counts as valuable civilians and who are just numbers.",
+                        "n": "Hey, that's a pretty good result. You may not yet qualify for a position in Czech diplomacy or as a member of the Middle East editorial team at Czech TV, but you're on the right track. Try to clarify a bit more who counts as valuable civilians and who are just numbers."
                     },
                     "thirdPerson": {
-                        "m": "Skóre je docela dobré, ale stále je co zlepšovat. Na pozici v české diplomaci, ani na blízkovýchodního redaktora ČT, to ještě úplně není, ale je to na dobré cestě. Bude to chtít si ještě trochu víc ujasnit, jací civilisté jsou lidé a jací jen čísla.",
-                        "f": "Skóre je docela dobré, ale stále je co zlepšovat. Na pozici v české diplomaci, ani na blízkovýchodní redaktorky ČT, to ještě úplně není, ale je to na dobré cestě. Bude to chtít si ještě trochu víc ujasnit, jací civilisté jsou lidé a jací jen čísla.",
-                        "n": "Skóre je docela dobré, ale stále je co zlepšovat. Na pozici v české diplomaci, ani v blízkovýchodní redakci ČT, to ještě úplně není, ale je to na dobré cestě. Bude to chtít si ještě trochu víc ujasnit, jací civilisté jsou lidé a jací jen čísla."
+                        "m": "The score is pretty good, but there's still room for improvement. It might not yet qualify him for a position in Czech diplomacy or as a Middle East editor at Czech TV, but it's on the right track. It will take some more effort to clarify who counts as valuable civilians and who are just numbers.",
+                        "f": "The score is pretty good, but there's still room for improvement. It might not yet qualify her for a position in Czech diplomacy or as a Middle East editor at Czech TV, but it's on the right track. It will take some more effort to clarify who counts as valuable civilians and who are just numbers.",
+                        "n": "The score is pretty good, but there's still room for improvement. It might not yet qualify them for a position in Czech diplomacy or as a member of the Middle East editorial team at Czech TV, but it's on the right track. It will take some more effort to clarify who counts as valuable civilians and who are just numbers."
                     }
                 },
                 "ogTitle": {
-                    "m": "{name} získal skóre {score}!",
-                    "f": "{name} získala skóre {score}!",
-                    "n": "{name} získalx skóre {score}!"
+                    "m": "{name} achieved a score of {score}!",
+                    "f": "{name} achieved a score of {score}!",
+                    "n": "{name} achieved a score of {score}!"
                 },
                 "ogDescription": {
-                    "m": "Podaří se ti ho překonat v tréninku české diplomacie?",
-                    "f": "Podaří se ti ji překonat v tréninku české diplomacie?",
-                    "n": "Podaří se ti to překonat v tréninku české diplomacie?"
+                    "m": "Can you surpass this in the Czech diplomacy training?",
+                    "f": "Can you surpass this in the Czech diplomacy training?",
+                    "n": "Can you surpass this in the Czech diplomacy training?"
                 }
             },
             "80": {
                 "title": {
                     "secondPerson": {
-                        "m": "Výborně, dosáhl jsi skóre",
-                        "f": "Výborně, dosáhla jsi skóre",
-                        "n": "Výborně, dosáhlx jsi skóre"
+                        "m": "Great, you achieved a score",
+                        "f": "Great, you achieved a score",
+                        "n": "Great, you achieved a score"
                     },
                     "thirdPerson": {
-                        "m": "dosáhl výborného skóre",
-                        "f": "dosáhla výborného skóre",
-                        "n": "dosáhlx výborného skóre"
+                        "m": "achieved an excellent score",
+                        "f": "achieved an excellent score",
+                        "n": "achieved an excellent score"
                     }
                 },
                 "paragraph": {
                     "secondPerson": {
-                        "m": "Strašně dobrý výsledek! S těmito znalostmi dělení civilistů na cenné a méněcenné se můžeš z fleku hlásit minimálně na pozici blízkovýchodního redaktora v ČT.",
-                        "f": "Strašně dobrý výsledek! S těmito znalostmi dělení civilistů na cenné a méněcenné se můžeš z fleku hlásit minimálně na pozici blízkovýchodního redaktorky v ČT.",
-                        "n": "Strašně dobrý výsledek! S těmito znalostmi dělení civilistů na cenné a méněcenné se můžeš z fleku hlásit minimálně na pozici blízkovýchodního zpravodajstva v ČT."
+                        "m": "Fantastic result! With this knowledge of categorizing civilians into valuable and less valuable, you can immediately apply for a position as a Middle East editor at Czech TV.",
+                        "f": "Fantastic result! With this knowledge of categorizing civilians into valuable and less valuable, you can immediately apply for a position as a Middle East editor at Czech TV.",
+                        "n": "Fantastic result! With this knowledge of categorizing civilians into valuable and less valuable, you can immediately apply for a position as part of the Middle East editorial team at Czech TV."
                     },
                     "thirdPerson": {
-                        "m": "Jeho výsledek je vynikající. S trochou dalšího tréninku by se mohl stát českým diplomatem. Zatím to však vypadá spíš na blízkovýchodního zpravodaje ČT.",
-                        "f": "Její výsledek je vynikající. S trochou dalšího tréninku by se mohla stát českou diplomatkou. Zatím to však vypadá spíš na blízkovýchodního zpravodajku ČT.",
-                        "n": "Tento výsledek je vynikající. S trochou dalšího tréninku by se mohlx stát součástí české diplomacie. Zatím to však vypadá spíš na blízkovýchodní redakci ČT."
+                        "m": "His result is excellent. With a bit more training, he could become a Czech diplomat. For now, it seems more likely that he might become a Middle East editor at Czech TV.",
+                        "f": "Her result is excellent. With a bit more training, she could become a Czech diplomat. For now, it seems more likely that she might become a Middle East editor at Czech TV.",
+                        "n": "This result is excellent. With a bit more training, they could become part of Czech diplomacy. For now, it seems more likely that they might become part of the Middle East editorial team at Czech TV."
                     }
                 },
                 "ogTitle": {
-                    "m": "{name} získal skvělé skóre {score}!",
-                    "f": "{name} získala skvělé skóre {score}!",
-                    "n": "{name} získalx skvělé skóre {score}!"
+                    "m": "{name} achieved an excellent score of {score}!",
+                    "f": "{name} achieved an excellent score of {score}!",
+                    "n": "{name} achieved an excellent score of {score}!"
                 },
                 "ogDescription": {
-                    "m": "Podaří se ti ho překonat v tréninku české diplomacie?",
-                    "f": "Podaří se ti ji překonat v tréninku české diplomacie?",
-                    "n": "Podaří se ti to překonat v tréninku české diplomacie?"
+                    "m": "Can you surpass this in the Czech diplomacy training?",
+                    "f": "Can you surpass this in the Czech diplomacy training?",
+                    "n": "Can you surpass this in the Czech diplomacy training?"
                 }
             },
             "90": {
                 "title": {
                     "secondPerson": {
-                        "m": "Výborně, dosáhl jsi skóre",
-                        "f": "Výborně, dosáhla jsi skóre",
-                        "n": "Výborně, dosáhlx jsi skóre"
+                        "m": "Excellent, you achieved a score",
+                        "f": "Excellent, you achieved a score",
+                        "n": "Excellent, you achieved a score"
                     },
                     "thirdPerson": {
-                        "m": "dosáhl úžasného skóre",
-                        "f": "dosáhla úžasného skóre",
-                        "n": "dosáhlx úžasného skóre"
+                        "m": "achieved an amazing score",
+                        "f": "achieved an amazing score",
+                        "n": "achieved an amazing score"
                     }
                 },
                 "paragraph": {
                     "secondPerson": {
-                        "m": "Tvoje až mrazivě dokonalé skóre ukazuje vysoké kompetence v rozlišování dobrého a špatného bombardování a třídění civilů! Už nechybí moc a zařadíš se po bok špiček české diplomacie. Doporučujeme navštívit https://mzv.gov.cz/jnp/cz/o_ministerstvu/zamestnani/aktualni_nabidky_zamestnani/index.html",
-                        "f": "Tvoje až mrazivě dokonalé skóre ukazuje vysoké kompetence v rozlišování dobrého a špatného bombardování a třídění civilů! Už nechybí moc a zařadíš se po bok špiček české diplomacie. Doporučujeme navštívit https://mzv.gov.cz/jnp/cz/o_ministerstvu/zamestnani/aktualni_nabidky_zamestnani/index.html",
-                        "n": "Tvoje až mrazivě dokonalé skóre ukazuje vysoké kompetence v rozlišování dobrého a špatného bombardování a třídění civilů! Už nechybí moc a zařadíš se po bok špiček české diplomacie. Doporučujeme navštívit https://mzv.gov.cz/jnp/cz/o_ministerstvu/zamestnani/aktualni_nabidky_zamestnani/index.html"
+                        "m": "Your chillingly perfect score demonstrates high competence in distinguishing good and bad bombings and sorting civilians! You're almost ready to join the top ranks of Czech diplomacy. We recommend visiting https://mzv.gov.cz/jnp/cz/o_ministerstvu/zamestnani/aktualni_nabidky_zamestnani/index.html.",
+                        "f": "Your chillingly perfect score demonstrates high competence in distinguishing good and bad bombings and sorting civilians! You're almost ready to join the top ranks of Czech diplomacy. We recommend visiting https://mzv.gov.cz/jnp/cz/o_ministerstvu/zamestnani/aktualni_nabidky_zamestnani/index.html.",
+                        "n": "Your chillingly perfect score demonstrates high competence in distinguishing good and bad bombings and sorting civilians! You're almost ready to join the top ranks of Czech diplomacy. We recommend visiting https://mzv.gov.cz/jnp/cz/o_ministerstvu/zamestnani/aktualni_nabidky_zamestnani/index.html."
                     },
                     "thirdPerson": {
-                        "m": "Jeho výsledek je téměř dokonalý. To ukazuje vysoké kompetence v oblasti rozlišování a strašnou připravenost hybridním hrozbám univerzálních lidských práv. Je tak plně připraven být součástí špičkové české diplomacie.",
-                        "f": "Její výsledek je téměř dokonalý. To ukazuje vysoké kompetence v oblasti rozlišování a strašnou připravenost hybridním hrozbám univerzálních lidských práv. Je tak plně připraven být součástí špičkové české diplomacie.",
-                        "n": "Tento výsledek je téměř dokonalý. To ukazuje vysoké kompetence v oblasti rozlišování a strašnou připravenost hybridním hrozbám univerzálních lidských práv. Je tak plně připraven být součástí špičkové české diplomacie."
+                        "m": "His result is nearly perfect. It demonstrates high competence in distinguishing and an impressive readiness to handle hybrid threats of universal human rights. He is fully prepared to join the elite of Czech diplomacy.",
+                        "f": "Her result is nearly perfect. It demonstrates high competence in distinguishing and an impressive readiness to handle hybrid threats of universal human rights. She is fully prepared to join the elite of Czech diplomacy.",
+                        "n": "This result is nearly perfect. It demonstrates high competence in distinguishing and an impressive readiness to handle hybrid threats of universal human rights. They are fully prepared to join the elite of Czech diplomacy."
                     }
                 },
                 "ogTitle": {
-                    "m": "{name} získal výtečné skóre {score}!",
-                    "f": "{name} získala výtečné skóre {score}!",
-                    "n": "{name} získalx výtečné skóre {score}!"
+                    "m": "{name} achieved an outstanding score of {score}!",
+                    "f": "{name} achieved an outstanding score of {score}!",
+                    "n": "{name} achieved an outstanding score of {score}!"
                 },
                 "ogDescription": {
-                    "m": "Podaří se ti ho překonat v tréninku české diplomacie?",
-                    "f": "Podaří se ti ji překonat v tréninku české diplomacie?",
-                    "n": "Podaří se ti to překonat v tréninku české diplomacie?"
+                    "m": "Can you surpass this in the Czech diplomacy training?",
+                    "f": "Can you surpass this in the Czech diplomacy training?",
+                    "n": "Can you surpass this in the Czech diplomacy training?"
                 }
             },
             "100": {
                 "title": {
                     "secondPerson": {
-                        "m": "Dosáhl jsi strašlivě dokonalého skóre",
-                        "f": "Dosáhla jsi strašlivě dokonalého skóre",
-                        "n": "Dosáhlx jsi strašlivě dokonalého skóre"
+                        "m": "You achieved a terrifyingly perfect score",
+                        "f": "You achieved a terrifyingly perfect score",
+                        "n": "You achieved a terrifyingly perfect score"
                     },
                     "thirdPerson": {
-                        "m": "dosáhl strašlivě dokonalého skóre",
-                        "f": "dosáhla strašlivě dokonalého skóre",
-                        "n": "dosáhlx strašlivě dokonalého skóre"
+                        "m": "achieved a terrifyingly perfect score",
+                        "f": "achieved a terrifyingly perfect score",
+                        "n": "achieved a terrifyingly perfect score"
                     }
                 },
                 "paragraph": {
                     "secondPerson": {
-                        "m": "Z dokonalosti tvého skóre až mrazí v zádech. Tímto výsledkem se řadíš po bok abolutních špiček české diplomacie! Gratulujeme a budeme rádi, pokud se ozveš přímo na: pers@mzv.gov.cz.",
-                        "f": "Z dokonalosti tvého skóre až mrazí v zádech. Tímto výsledkem se řadíš po bok abolutních špiček české diplomacie! Gratulujeme a budeme rádi, pokud se ozveš přímo na: pers@mzv.gov.cz.",
-                        "n": "Z dokonalosti tvého skóre až mrazí v zádech. Tímto výsledkem se řadíš po bok abolutních špiček české diplomacie! Gratulujeme a budeme rádi, pokud se ozveš přímo na: pers@mzv.gov.cz."
+                        "m": "Your flawless score is chilling. With this result, you stand among the top of Czech diplomacy! Congratulations, and feel free to contact us directly at: pers@mzv.gov.cz.",
+                        "f": "Your flawless score is chilling. With this result, you stand among the top of Czech diplomacy! Congratulations, and feel free to contact us directly at: pers@mzv.gov.cz.",
+                        "n": "Your flawless score is chilling. With this result, you stand among the top of Czech diplomacy! Congratulations, and feel free to contact us directly at: pers@mzv.gov.cz."
                     },
                     "thirdPerson": {
-                        "m": "Z perfektnosti jeho skóre až mrazí v zádech. A tím se řadí po bok opravdových špiček české diplomacie. Z naprostých hlubin lidské duše nezbývá než gratulovat k strašně dobrému úspěchu!",
-                        "f": "Z perfektnosti jejího skóre až mrazí v zádech. A tím se řadí po bok opravdových špiček české diplomacie. Z naprostých hlubin lidské duše nezbývá než gratulovat k strašně dobrému úspěchu!",
-                        "n": "Z perfektnosti tohoto skóre až mrazí v zádech. A tím se řadí po bok opravdových špiček české diplomacie. Z naprostých hlubin lidské duše nezbývá než gratulovat k strašně dobrému úspěchu!"
+                        "m": "His perfect score is chilling. This places him among the true elites of Czech diplomacy. A heartfelt congratulations for this remarkable success!",
+                        "f": "Her perfect score is chilling. This places her among the true elites of Czech diplomacy. A heartfelt congratulations for this remarkable success!",
+                        "n": "This perfect score is chilling. This places them among the true elites of Czech diplomacy. A heartfelt congratulations for this remarkable success!"
                     }
                 },
                 "ogTitle": {
-                    "m": "{name} získal perfektní skóre {score}!",
-                    "f": "{name} získala prfektní skóre {score}!",
-                    "n": "{name} získalx perfektní {score}!"
+                    "m": "{name} achieved a perfect score of {score}!",
+                    "f": "{name} achieved a perfect score of {score}!",
+                    "n": "{name} achieved a perfect score of {score}!"
                 },
                 "ogDescription": {
-                    "m": "Podaří se ti ho překonat v tréninku české diplomacie?",
-                    "f": "Podaří se ti ji překonat v tréninku české diplomacie?",
-                    "n": "Podaří se ti to překonat v tréninku české diplomacie?"
+                    "m": "Can you surpass this in the Czech diplomacy training?",
+                    "f": "Can you surpass this in the Czech diplomacy training?",
+                    "n": "Can you surpass this in the Czech diplomacy training?"
                 }
             }
         }
     },
     "button": {
-        "startGame": "Zahájit kvíz",
-        "goHome": "Zpět domů"
+        "startGame": "Start Quiz",
+        "goHome": "Go Home"
     },
 
-    "gameTitle": "Zvolte bombardování, které je dobré:",
-    "correct": "Správně!",
-    "wrong": "Špatně!",
-    "nextRound": "Další Kolo",
-    "playAgain": "Hrát Znovu",
-    "yourScore": "Váš konečný výsledek",
-    "round": "Kolo"
+    "gameTitle": "Choose the bombing that is good:",
+    "correct": "Correct!",
+    "wrong": "Wrong!",
+    "nextRound": "Next Round",
+    "playAgain": "Play Again",
+    "yourScore": "Your Final Score",
+    "round": "Round"
 }
