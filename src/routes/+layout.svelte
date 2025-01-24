@@ -2,6 +2,7 @@
     import '$lib/i18n.ts'; // initialize i18n
     import LanguageSwitcher from '$lib/LanguageSwitcher.svelte';
     import { base } from '$app/paths';
+    import { t } from 'svelte-i18n';
 </script>
 
 <svelte:head>
@@ -31,7 +32,7 @@
         </div>
         <div class="left">
             <div>
-                <i>nevzniklo by nebýt</i>
+                <i>{$t('footer.thanksTo')}</i>
             </div>
             <img src={`${base}/logo/vlada.svg`} alt="Logo 1" />
             <img src={`${base}/logo/zahranici.gif`} alt="MZCL" />

@@ -432,5 +432,8 @@
     "nextRound": "Další Kolo",
     "playAgain": "Hrát Znovu",
     "yourScore": "Váš konečný výsledek",
-    "round": "Kolo"
+    "round": "Kolo",
+    "footer": {
+        "thanksTo": "nevzniklo by nebýt"
+    }
 }

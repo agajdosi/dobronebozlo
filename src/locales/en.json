@@ -433,5 +433,8 @@
     "nextRound": "Next Round",
     "playAgain": "Play Again",
     "yourScore": "Your Final Score",
-    "round": "Round"
+    "round": "Round",
+    "footer": {
+        "thanksTo": "made necessary by"
+    }
 }
